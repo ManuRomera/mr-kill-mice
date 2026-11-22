@@ -1,0 +1,270 @@
+{
+ "MRKM": {
+  "SinGM": "No hay ningún DJ conectado: la acción tiene que resolverla el DJ.",
+  "FaltaCondicion": "Falta el objeto de condición «{slug}». Importa la aventura.",
+  "SinHueco": "{nombre} no tiene casillas libres para {cond}: tiene que soltar un objeto.",
+  "SoloGM": "Solo el DJ puede hacer esto.",
+  "Cancelar": "Cancelar",
+  "Guardar": "Guardar",
+  "Cerrar": "Cerrar",
+  "Ajustes": {
+   "mostrarHud": {
+    "Name": "Mostrar la Lista y la pelea",
+    "Hint": "Acto, secuencia, reloj de la Sirena Roja, orden de actuación y tu Lista de Muerte en una esquina. Se arrastra con el botón derecho."
+   },
+   "efectosSonido": {
+    "Name": "Efectos de sonido",
+    "Hint": "Katanas, disparos, gong, sirena y demás efectos de las reglas."
+   },
+   "volumenEfectos": {
+    "Name": "Volumen de los efectos",
+    "Hint": "Solo en este navegador."
+   },
+   "efectosVisuales": {
+    "Name": "Destellos y rótulos en pantalla",
+    "Hint": "Un destello breve con los golpes y el rótulo grande de cada tachón. Se desactiva solo si el sistema pide reducir el movimiento."
+   },
+   "textoGrande": {
+    "Name": "Texto grande",
+    "Hint": "Agranda el texto de los paneles, el HUD y el chat del módulo."
+   },
+   "altoContraste": {
+    "Name": "Alto contraste",
+    "Hint": "Colores más contrastados en los paneles y el HUD del módulo."
+   },
+   "escalaVentanas": {
+    "Name": "Tamaño de las ventanas (%)",
+    "Hint": "0 = automático: cada ventana del módulo se encoge lo justo para caber entera en tu pantalla. Otro valor fija esa escala. Ajuste de este navegador."
+   },
+   "restablecer": {
+    "Name": "Restablecer posiciones",
+    "Label": "Restablecer",
+    "Hint": "Devuelve el HUD y el panel del DJ a su sitio y tamaño de origen.",
+    "Hecho": "Posiciones restablecidas."
+   }
+  },
+  "Importar": {
+   "SinPack": "No encuentro el compendio de la aventura.",
+   "Titulo": "Importar Kill Mice",
+   "Aviso": "Este mundo ya tiene contenido. Si importas la aventura se <b>sobrescribirán</b> los documentos de Kill Mice que hayas cambiado a mano.",
+   "Si": "Importar",
+   "Empieza": "Importando Kill Mice…",
+   "Hecho": "Aventura importada. Empieza por el diario «Kill Mice · Guía del DJ»."
+  },
+  "Integ": {
+   "DireccionSi": "MR- Dirección activo: escenas, música, motivos, efectos y figuras de la aventura en su barra.",
+   "DireccionNo": "MR- Dirección no está activo (opcional): con él tienes barra de escenas con música, motivos y figuras.",
+   "PizarraSi": "MR- Pizarra activo: el tablero de las Listas de Muerte está listo para crearse.",
+   "PizarraNo": "MR- Pizarra no está activo (opcional): con él tienes un tablero de quién va a por quién.",
+   "AbrirPizarra": "Pizarra de las Listas",
+   "NombrePizarra": "Kill Mice · Las Listas de Muerte",
+   "PizarraLista": "Pizarra preparada: revisa y pulsa «Importar».",
+   "Conviven": "También activos: {m}. Conviven sin problema: Kill Mice usa sus propias tarjetas y no toca las tiradas nativas."
+  },
+  "Casillas": {
+   "Aviso": "Solo tienes seis casillas: esa parte de la mochila no existe.",
+   "NoSeQuita": "«Sin sitio» son las seis casillas de Kill Mice: solo el DJ puede quitarlo."
+  },
+  "Barra": {
+   "Titulo": "Kill Mice",
+   "Panel": "Panel del DJ",
+   "Atacar": "Atacar (Kill Mice)",
+   "Turba": "Turno de la Turba",
+   "Secuencia": "Nueva secuencia",
+   "Hud": "Mostrar u ocultar la Lista",
+   "Pizarra": "Pizarra de las Listas"
+  },
+  "Cond": {
+   "sirena-roja": "Sirena Roja",
+   "aturdido": "Aturdido",
+   "magullado": "Magullado"
+  },
+  "Ataque": {
+   "Titulo": "Atacar · {nombre}",
+   "Arma": "Arma",
+   "DosPatas": "A dos patas",
+   "Objetivo": "Objetivo",
+   "Masillas": "Masillas ({m} encima de ti · {total} en total)",
+   "EnLista": "n.º {n} de tu Lista",
+   "Tecnicas": "Técnicas y ventajas",
+   "Inercia": "Inercia de venganza (+1 escalón)",
+   "Mejorado": "Mejorado (+1 escalón)",
+   "Ventaja": "Ventaja (2 dados, el mayor)",
+   "Plano": "Daño extra",
+   "Cinco": "GOLPE DE LOS CINCO PUNTOS",
+   "Tirar": "Tirar",
+   "SirenaAyuda": "Tienes la Sirena Roja: contra un nombre de tu Lista, el ataque es mejorado (se aplica solo).",
+   "SiluetasAyuda": "Siluetas sobre fondo azul: tus dados explotan también con el valor anterior al máximo.",
+   "SinActor": "Elige tu ratón (o selecciona su ficha en la escena).",
+   "NoTuyo": "Ese ratón no es tuyo.",
+   "Kungfu": "Kung-fu ratonil (sin arma)",
+   "Escalera": "Bolsa llena de armas: hierro {n}",
+   "InerciaUsada": "Inercia de venganza",
+   "SirenaUsada": "Sirena Roja",
+   "Explota": "¡EXPLOTA ×{n}!",
+   "Carniceria": "Carnicería coreografiada",
+   "Abatiendo": "Abate hasta {n} Masillas.",
+   "Caen": "Caen {n} Masillas. Quedan {quedan}.",
+   "Contra": "Contra {nombre}",
+   "TajoContinuo": "Tajo continuo: el sobrante abate {n} Masillas."
+  },
+  "Dano": {
+   "Resumen": "{nombre}: armadura {arm}, pierde {hp} PG (quedan {quedan}).",
+   "FueAguanta": "El resto va a FUE ({v}): salvación {tirada}, aguanta en pie.",
+   "FueCae": "El resto va a FUE ({v}): salvación {tirada}, falla y queda incapacitado.",
+   "Muere": "La FUE llega a 0: muere."
+  },
+  "Bill": {
+   "Resiste": "Resistencia de jefe: saca {n} (par). Se limpia la sangre de la mandíbula y sigue en pie con 3 PG.",
+   "NoResiste": "Resistencia de jefe: saca {n} (impar). No se levanta.",
+   "Ataca": "¿A quién ataca Bill?",
+   "Golpe": "Bill «Mandíbula» Jang · daño escalable (mayor golpe + 1 = {base})",
+   "Pared": "Espalda contra la pared: le han atacado {n} personajes en esta secuencia. Bill hace dos ataques en su turno."
+  },
+  "Budd": {
+   "Bramido": "Bramido de Budd",
+   "Aguanta": "{nombre} aguanta el bramido: VOL {tirada} contra {v}.",
+   "Aturde": "Bramido: {nombre} falla VOL ({tirada} contra {v}) y queda Aturdido"
+  },
+  "Sheng": {
+   "Titulo": "Lacayo ablativo",
+   "Pregunta": "Sheng va a recibir {dano} de daño y quedan Masillas en pie. ¿Tira de un Farolillo como escudo humano? (una vez por asalto)",
+   "Escudo": "¡Lacayo ablativo! Sheng tira de un Farolillo Azul: el Masilla cae en su lugar y Sheng no sufre daño.",
+   "Lealtad": "Inspirar lealtad: todos los demás Enemigos con Nombre en pie hacen ahora un ataque gratuito de represalia."
+  },
+  "Pei": {
+   "Herencia": "Herencia explosiva: la mochila de Pólvora Pei le da a Mecha Corta un uso extra de Granada salvaje."
+  },
+  "Vibora": {
+   "Sangre": "Derramamiento de sangre heroico: +1 PG perdido."
+  },
+  "Cinco": {
+   "Desbloqueado": "Cuatro nombres tachados: GOLPE DE LOS CINCO PUNTOS desbloqueado contra Bill.",
+   "Cae": "Golpe de los Cinco Puntos: Bill da cinco pasos y cae."
+  },
+  "Enemigo": {
+   "Ataca": "Ataca {nombre}",
+   "Elige": "¿A qué ratón? (o márcalo con la diana antes)"
+  },
+  "Tachon": {
+   "Titulo": "¡Tachado de la Lista!",
+   "Pregunta": "{nombre} ha caído. ¿Quién participó y lo tacha?",
+   "Ultimo": "Último golpe (Moneda de Fortuna):",
+   "Tachar": "Tachar",
+   "UltimoManual": "¿{nombre} dio el último golpe? (Si el nombre es compartido, gana una Moneda de Fortuna.)",
+   "Cabecera": "¡Tachado el n.º {n}!",
+   "Respiro": "Respiro de sangre",
+   "Cura": "recupera {n} PG",
+   "QuitaMagullado": "se quita Magullado",
+   "SinHeridas": "no tenía heridas",
+   "InerciaLista": "Inercia de venganza: su próximo ataque es mejorado",
+   "Quita": "Se quita: {c}",
+   "Moneda": "¡Último golpe! Gana una Moneda de Fortuna.",
+   "Completa": "LISTA COMPLETA. Cinco nombres, cinco tachones.",
+   "Rotulo": "Tachado por {nombre} · n.º {n}"
+  },
+  "Moneda": {
+   "Titulo": "Moneda de Fortuna",
+   "Gasta": "{nombre} gasta una Moneda de Fortuna: repite una tirada o activa gratis una técnica."
+  },
+  "Sirena": {
+   "Acepta": "{nombre} acepta la Sirena Roja: sus ataques contra los nombres de su Lista son mejorados."
+  },
+  "Turba": {
+   "Titulo": "Turno de la Turba",
+   "Encima": "{n} Masillas rodean a {nombre}: golpe de {dado}.",
+   "Tony": "Tony Ma grita órdenes: +2 si el golpe entra.",
+   "Esquiva": "Esquiva acrobática (DES)",
+   "Encaja": "Encajar el golpe",
+   "EsquivaOk": "¡Esquiva acrobática!",
+   "EsquivaDetalle": "DES {tirada} contra {v}: ni un rasguño, y la maniobra abate {caen} Masillas.",
+   "EsquivaFalla": "{nombre} falla la esquiva (DES {tirada} contra {v}): la Turba lo engancha.",
+   "Golpe": "La Turba engancha",
+   "Nadie": "Ningún ratón tiene Masillas encima."
+  },
+  "Masillas": {
+   "Desplegados": "{n} {tipo} en escena, repartidos entre los ratones.",
+   "Tipo1": "Farolillos Azules",
+   "Tipo2": "Maníacos de la Guardia Interior"
+  },
+  "Secuencia": {
+   "Titulo": "Secuencia {n} · ronda {ronda}",
+   "Curan": "La Tigresa y El Sapo recuperan 2 PG."
+  },
+  "Reloj": {
+   "Sube": "Sirena Roja {n}/6",
+   "Lleno1": "¡Sirenas de la Guardia! La Pelea I termina.",
+   "Lleno2": "¡SILUETAS SOBRE FONDO AZUL!",
+   "Pub1": "Nadie ha tachado un nombre. La sirena empieza a sonar.",
+   "Pub2": "La sirena sube de tono.",
+   "Pub3": "El montaje se alarga: alguien tiene que caer.",
+   "Pub4": "La sirena aúlla.",
+   "Pub5": "Último aviso.",
+   "Pub6": "Se acabó el tiempo.",
+   "Gm1": "Avanza al final de cada secuencia sin tachones. Lleno: llega la Guardia y acaba la Pelea I.",
+   "Gm2": "Avanza al final de cada secuencia sin tachones. Lleno: siluetas sobre fondo azul (los dados de los PJ explotan con máximo − 1)."
+  },
+  "Municion": {
+   "Titulo": "Fin de la pelea · munición",
+   "Marca": "marca un uso ({v}/{max})",
+   "Encasquilla": "¡Se encasquilla!",
+   "Bien": "sin desgaste",
+   "Nada": "Nadie ha usado armas de fuego."
+  },
+  "Hud": {
+   "Titulo": "Kill Mice · la Lista",
+   "Vol1": "VOL. 1",
+   "Vol2": "VOL. 2",
+   "Secuencia": "Secuencia {n}",
+   "SinPelea": "Sin pelea",
+   "SecuenciaAyuda": "Cada pelea dura cuatro secuencias. Al empezar cada una se tira iniciativa.",
+   "Reloj": "Sirena Roja {n}/6",
+   "RelojAyuda": "Avanza al final de cada secuencia en la que nadie tacha un nombre.",
+   "Masillas": "Masillas: {total} ({libres} sin asignar)",
+   "Encima": "Masillas encima: {n}",
+   "Inercia": "Inercia",
+   "NuevaSecuencia": "Secuencia",
+   "Turba": "Turba",
+   "Atacar": "Atacar",
+   "Sirena": "Sirena Roja",
+   "Moneda": "Moneda ({n})",
+   "MaxGolpe": "Mayor golpe de la noche: {n}",
+   "MaxAyuda": "Bill hace este daño + 1.",
+   "Mas": "Uno más",
+   "Menos": "Uno menos"
+  },
+  "Panel": {
+   "Titulo": "Kill Mice · Panel del DJ",
+   "mesa": "Los vengadores",
+   "pelea": "La pelea",
+   "enemigos": "Enemigos con nombre",
+   "listas": "Las Listas",
+   "escenas": "Escenas",
+   "tablas": "Tablas",
+   "integ": "Integraciones",
+   "MesaAyuda": "Elige qué jugador lleva cada ratón: recibe la ficha y su dosier. Rosa Muk es la reserva para el primero que caiga.",
+   "Reserva": "(reserva)",
+   "Jugador": "Jugador de",
+   "NadieAsignado": "— sin jugador —",
+   "MostrarDosier": "Abrir el dosier",
+   "SinAventura": "No hay vengadores en el mundo.",
+   "Importar": "Importar la aventura",
+   "SinEscenas": "No hay escenas de Kill Mice.",
+   "Acto": "Acto",
+   "Desplegar": "Desplegar",
+   "Repartir": "Repartir",
+   "Fichas": "Fichas",
+   "FichasAyuda": "Pone una ficha por Masilla en la escena actual (opcional).",
+   "CuantosMasillas": "¿Cuántos Masillas? (3 por jugador en el Acto I, 2 en el Acto II)",
+   "FinPelea": "Fin de la pelea",
+   "Reiniciar": "Reiniciar",
+   "ReiniciarSeguro": "¿Borrar todo el estado de la noche (Listas tachadas, monedas, Masillas, reloj)? No toca las fichas.",
+   "Ficha": "Abrir la ficha",
+   "AtacaPNJ": "Atacar a un ratón",
+   "TacharCaido": "Ha caído: tachar",
+   "Bill": "Ataque de Bill",
+   "Copion": "Gato copión",
+   "Monedas": "{n} monedas"
+  }
+ }
+}

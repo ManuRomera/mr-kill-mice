@@ -1,0 +1,1570 @@
+{
+ "schema": 1,
+ "id": "mr-kill-mice",
+ "title": "MR- Kill Mice",
+ "version": "1.0.0",
+ "author": "Manu Romera",
+ "license": "CC BY-NC-SA 4.0",
+ "settings": {
+  "fade": 3,
+  "motifs": [
+   {
+    "id": "tension",
+    "label": "Tensión",
+    "icon": "hourglass-half",
+    "music": {
+     "flag": [
+      "mr-kill-mice",
+      "slug",
+      "moods-tension"
+     ]
+    }
+   },
+   {
+    "id": "venganza",
+    "label": "Venganza",
+    "icon": "skull",
+    "music": {
+     "flag": [
+      "mr-kill-mice",
+      "slug",
+      "moods-venganza"
+     ]
+    }
+   },
+   {
+    "id": "ralenti",
+    "label": "Cámara lenta",
+    "icon": "feather",
+    "music": {
+     "flag": [
+      "mr-kill-mice",
+      "slug",
+      "moods-ralenti"
+     ]
+    }
+   },
+   {
+    "id": "triunfo",
+    "label": "Triunfo",
+    "icon": "trophy",
+    "music": {
+     "flag": [
+      "mr-kill-mice",
+      "slug",
+      "moods-triunfo"
+     ]
+    }
+   },
+   {
+    "id": "derrota",
+    "label": "Derrota",
+    "icon": "heart-crack",
+    "music": {
+     "flag": [
+      "mr-kill-mice",
+      "slug",
+      "moods-derrota"
+     ]
+    }
+   },
+   {
+    "id": "calma",
+    "label": "Calma",
+    "icon": "leaf",
+    "music": {
+     "flag": [
+      "mr-kill-mice",
+      "slug",
+      "moods-calma"
+     ]
+    }
+   }
+  ],
+  "effects": [
+   {
+    "id": "disparo",
+    "label": "Disparo",
+    "icon": "gun",
+    "sound": {
+     "flag": [
+      "mr-kill-mice",
+      "slug",
+      "sfx-disparo"
+     ]
+    }
+   },
+   {
+    "id": "katana",
+    "label": "Katana",
+    "icon": "khanda",
+    "sound": {
+     "flag": [
+      "mr-kill-mice",
+      "slug",
+      "sfx-katana"
+     ]
+    }
+   }
+  ],
+  "markers": {
+   "milestones": [
+    {
+     "id": "estallido",
+     "label": "Estalla la boda"
+    },
+    {
+     "id": "secuestro",
+     "label": "Los novios han desaparecido"
+    },
+    {
+     "id": "pista",
+     "label": "Rumbo a Wan Chai"
+    },
+    {
+     "id": "jaula",
+     "label": "La jaula, abierta"
+    },
+    {
+     "id": "bill",
+     "label": "BILL, tachado"
+    },
+    {
+     "id": "medallon",
+     "label": "El medallón tiene dueño"
+    }
+   ],
+   "clocks": []
+  }
+ },
+ "scenes": [
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "jardin"
+    ]
+   },
+   "order": 0,
+   "name": "El Jardín del Estanque Koi",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.sPHPNpwYmkPcPQIa"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-banquete"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Brindis",
+     "icon": "champagne-glasses",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-discurso"
+      ]
+     }
+    },
+    {
+     "label": "Gong",
+     "icon": "drum",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-gong"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-jardin"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "mamba"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "vibora"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "martillo"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "placa"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "ojo"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "mecha"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "rosa"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "leon"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/jardin.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "masacre"
+    ]
+   },
+   "order": 1,
+   "name": "Pelea I · Algo prestado",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.sPHPNpwYmkPcPQIa"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-pelea1"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Ráfaga",
+     "icon": "burst",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-rafaga"
+      ]
+     }
+    },
+    {
+     "label": "¡KA-CHINK!",
+     "icon": "hand-fist",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-kachink"
+      ]
+     }
+    },
+    {
+     "label": "Cristal",
+     "icon": "glass-water",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-cristal"
+      ]
+     }
+    },
+    {
+     "label": "Sirena Roja",
+     "icon": "bell",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-sirena"
+      ]
+     }
+    },
+    {
+     "label": "Tachón",
+     "icon": "marker",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-tachon"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-jardin"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sheng"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "tonyma"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "alas"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "leung"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "rosa"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/masacre.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "mapa-jardin"
+    ]
+   },
+   "order": 2,
+   "name": "Plano · El Jardín del Banquete",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.K4cCNVh7NABeGGSA"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-pelea1"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Ráfaga",
+     "icon": "burst",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-rafaga"
+      ]
+     }
+    },
+    {
+     "label": "¡KA-CHINK!",
+     "icon": "hand-fist",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-kachink"
+      ]
+     }
+    },
+    {
+     "label": "Cristal",
+     "icon": "glass-water",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-cristal"
+      ]
+     }
+    },
+    {
+     "label": "Sirena Roja",
+     "icon": "bell",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-sirena"
+      ]
+     }
+    },
+    {
+     "label": "Tachón",
+     "icon": "marker",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-tachon"
+      ]
+     }
+    },
+    {
+     "label": "Sirenas de la Guardia",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-sirenas-guardia"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-jardin"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/mapa-jardin.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "wanchai"
+    ]
+   },
+   "order": 3,
+   "name": "Interludio · Wan Chai",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.tnvY9dyX83QEert9"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-huida"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Sirenas de la Guardia",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-sirenas-guardia"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-neon"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/wanchai.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "callejon"
+    ]
+   },
+   "order": 4,
+   "name": "Interludio · El maletero",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.tnvY9dyX83QEert9"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-huida"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Tachón",
+     "icon": "marker",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-tachon"
+      ]
+     }
+    },
+    {
+     "label": "Sirena Roja",
+     "icon": "bell",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-sirena"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-neon"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sofie"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "lau"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/callejon.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "casa"
+    ]
+   },
+   "order": 5,
+   "name": "La Casa de las Hojas Azules",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.xZvMEeTldPj6PJf2"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-casa"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Petardo",
+     "icon": "bomb",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-petardo"
+      ]
+     }
+    },
+    {
+     "label": "Cadena",
+     "icon": "link",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-cadena"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-neon"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "elle"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "pei"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/casa.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "santuario"
+    ]
+   },
+   "order": 6,
+   "name": "Pelea II · El santuario",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.snVnhvS3kmhLhY53"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-pelea2"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Gong",
+     "icon": "drum",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-gong"
+      ]
+     }
+    },
+    {
+     "label": "Cadena",
+     "icon": "link",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-cadena"
+      ]
+     }
+    },
+    {
+     "label": "Bramido",
+     "icon": "volume-high",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-bramido"
+      ]
+     }
+    },
+    {
+     "label": "Cristal",
+     "icon": "glass-water",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-cristal"
+      ]
+     }
+    },
+    {
+     "label": "Petardo",
+     "icon": "bomb",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-petardo"
+      ]
+     }
+    },
+    {
+     "label": "Tachón",
+     "icon": "marker",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-tachon"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-casa"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "bill"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "oren"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "budd"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/santuario.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "mapa-casa"
+    ]
+   },
+   "order": 7,
+   "name": "Plano · El santuario",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.xZvMEeTldPj6PJf2"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-pelea2"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Cadena",
+     "icon": "link",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-cadena"
+      ]
+     }
+    },
+    {
+     "label": "Bramido",
+     "icon": "volume-high",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-bramido"
+      ]
+     }
+    },
+    {
+     "label": "Cristal",
+     "icon": "glass-water",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-cristal"
+      ]
+     }
+    },
+    {
+     "label": "Petardo",
+     "icon": "bomb",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-petardo"
+      ]
+     }
+    },
+    {
+     "label": "Apagón azul",
+     "icon": "lightbulb",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-apagon"
+      ]
+     }
+    },
+    {
+     "label": "Tachón",
+     "icon": "marker",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-tachon"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-casa"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/mapa-casa.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "siluetas"
+    ]
+   },
+   "order": 8,
+   "name": "Siluetas sobre fondo azul",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.snVnhvS3kmhLhY53"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-siluetas"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Apagón azul",
+     "icon": "lightbulb",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-apagon"
+      ]
+     }
+    },
+    {
+     "label": "Cadena",
+     "icon": "link",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-cadena"
+      ]
+     }
+    },
+    {
+     "label": "Tachón",
+     "icon": "marker",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-tachon"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-casa"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/siluetas.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "columna"
+    ]
+   },
+   "order": 9,
+   "name": "La Columna del Fénix y el Dragón",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.DPWrHgN38pPiswjC"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-epilogo"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Gong",
+     "icon": "drum",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-gong"
+      ]
+     }
+    },
+    {
+     "label": "Tachón",
+     "icon": "marker",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-tachon"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-casa"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "bill"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/columna.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "tejados"
+    ]
+   },
+   "order": 10,
+   "name": "Fuga por los tejados",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.snVnhvS3kmhLhY53"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-huida"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Sirenas de la Guardia",
+     "icon": "tower-broadcast",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-sirenas-guardia"
+      ]
+     }
+    },
+    {
+     "label": "Petardo",
+     "icon": "bomb",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-petardo"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-neon"
+    ]
+   },
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/tejados.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "boda"
+    ]
+   },
+   "order": 11,
+   "name": "Epílogo · La foto de boda",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.DPWrHgN38pPiswjC"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-epilogo"
+    ]
+   },
+   "motifs": null,
+   "cues": [
+    {
+     "label": "Brindis",
+     "icon": "champagne-glasses",
+     "sound": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "sfx-discurso"
+      ]
+     }
+    }
+   ],
+   "ambient": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "ambient-jardin"
+    ]
+   },
+   "figures": [
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "rosa"
+      ]
+     },
+     "label": ""
+    },
+    {
+     "ref": {
+      "flag": [
+       "mr-kill-mice",
+       "slug",
+       "leon"
+      ]
+     },
+     "label": ""
+    }
+   ],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/boda.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "ref": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "tren"
+    ]
+   },
+   "order": 12,
+   "name": "Postcréditos · El tren del norte",
+   "reading": {
+    "uuid": "JournalEntry.qzpUo9webILDpp3x.JournalEntryPage.DPWrHgN38pPiswjC"
+   },
+   "music": {
+    "flag": [
+     "mr-kill-mice",
+     "slug",
+     "music-epilogo"
+    ]
+   },
+   "motifs": null,
+   "cues": [],
+   "ambient": null,
+   "figures": [],
+   "handouts": [],
+   "notes": "",
+   "thumb": "modules/mr-kill-mice/assets/scenes/thumbs/tren.webp",
+   "stage": {
+    "eye": 0.5,
+    "anchors": [
+     [
+      0.2,
+      0.9
+     ],
+     [
+      0.35,
+      0.92
+     ],
+     [
+      0.5,
+      0.93
+     ],
+     [
+      0.65,
+      0.92
+     ],
+     [
+      0.8,
+      0.9
+     ]
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,488 @@
+{
+ "format": "mr-pizarra-import",
+ "version": 1,
+ "mode": "board",
+ "title": "Kill Mice · Las Listas de Muerte",
+ "background": "corcho-claro",
+ "pinPreset": {
+  "pin": "auto",
+  "color": "",
+  "layout": "auto"
+ },
+ "layers": [
+  {
+   "ref": "vengadores",
+   "name": "Los vengadores",
+   "revealed": true
+  },
+  {
+   "ref": "acto1",
+   "name": "Mares Dorados",
+   "revealed": true
+  },
+  {
+   "ref": "acto2",
+   "name": "Escuadrón Víbora",
+   "revealed": false
+  }
+ ],
+ "items": [
+  {
+   "ref": "mamba",
+   "type": "entity",
+   "name": "La Mamba Amarilla",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "vengadores",
+   "x": 300,
+   "y": 240,
+   "w": 220,
+   "rot": -4
+  },
+  {
+   "ref": "vibora",
+   "type": "entity",
+   "name": "El Víbora de Terciopelo",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "vengadores",
+   "x": 720,
+   "y": 240,
+   "w": 220,
+   "rot": 3
+  },
+  {
+   "ref": "martillo",
+   "type": "entity",
+   "name": "El Martillo de Paso",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "vengadores",
+   "x": 1140,
+   "y": 240,
+   "w": 220,
+   "rot": -2
+  },
+  {
+   "ref": "placa",
+   "type": "entity",
+   "name": "La Placa Rota",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "vengadores",
+   "x": 1560,
+   "y": 240,
+   "w": 220,
+   "rot": 4
+  },
+  {
+   "ref": "ojo",
+   "type": "entity",
+   "name": "La Ojo de Cristal",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "vengadores",
+   "x": 1980,
+   "y": 240,
+   "w": 220,
+   "rot": -3
+  },
+  {
+   "ref": "mecha",
+   "type": "entity",
+   "name": "Mecha Corta",
+   "kind": "Actor",
+   "frame": "polaroid",
+   "showToAll": true,
+   "layer": "vengadores",
+   "x": 2400,
+   "y": 240,
+   "w": 220,
+   "rot": 2
+  },
+  {
+   "ref": "sheng",
+   "type": "entity",
+   "name": "«Jet-Set» Sheng",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto1",
+   "x": 260,
+   "y": 760,
+   "w": 170,
+   "rot": -1
+  },
+  {
+   "ref": "tonyma",
+   "type": "entity",
+   "name": "Tony Ma",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto1",
+   "x": 660,
+   "y": 760,
+   "w": 170,
+   "rot": 0
+  },
+  {
+   "ref": "alas",
+   "type": "entity",
+   "name": "«Alas» Chu",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto1",
+   "x": 1060,
+   "y": 760,
+   "w": 170,
+   "rot": 1
+  },
+  {
+   "ref": "leung",
+   "type": "entity",
+   "name": "«Ochenta y Ocho» Leung",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto1",
+   "x": 1460,
+   "y": 760,
+   "w": 170,
+   "rot": 2
+  },
+  {
+   "ref": "sofie",
+   "type": "entity",
+   "name": "«Cuchilla» Sofie",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto1",
+   "x": 260,
+   "y": 1120,
+   "w": 170,
+   "rot": -2
+  },
+  {
+   "ref": "johnnymo",
+   "type": "entity",
+   "name": "Johnny Mo «El Contable»",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto1",
+   "x": 660,
+   "y": 1120,
+   "w": 170,
+   "rot": -1
+  },
+  {
+   "ref": "clavos",
+   "type": "entity",
+   "name": "«Clavos» Chen",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto1",
+   "x": 1060,
+   "y": 1120,
+   "w": 170,
+   "rot": 0
+  },
+  {
+   "ref": "lau",
+   "type": "entity",
+   "name": "Sargento Corrupto Lau",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto1",
+   "x": 1460,
+   "y": 1120,
+   "w": 170,
+   "rot": 1
+  },
+  {
+   "ref": "elle",
+   "type": "entity",
+   "name": "«Ojo de Serpiente» Elle",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto2",
+   "x": 1860,
+   "y": 1120,
+   "w": 170,
+   "rot": 2
+  },
+  {
+   "ref": "pei",
+   "type": "entity",
+   "name": "«Pólvora» Pei",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto2",
+   "x": 2260,
+   "y": 1120,
+   "w": 170,
+   "rot": -2
+  },
+  {
+   "ref": "bill",
+   "type": "entity",
+   "name": "Bill «Mandíbula» Jang",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto2",
+   "x": 260,
+   "y": 1480,
+   "w": 170,
+   "rot": -1
+  },
+  {
+   "ref": "oren",
+   "type": "entity",
+   "name": "O-Ren «La Tigresa»",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto2",
+   "x": 660,
+   "y": 1480,
+   "w": 170,
+   "rot": 0
+  },
+  {
+   "ref": "budd",
+   "type": "entity",
+   "name": "Budd «El Sapo»",
+   "kind": "Actor",
+   "frame": "foto-instantanea-80",
+   "layer": "acto2",
+   "x": 1060,
+   "y": 1480,
+   "w": 170,
+   "rot": 1
+  },
+  {
+   "ref": "sello",
+   "type": "stamp",
+   "layer": "acto2",
+   "kind": "marco-circular-rojo",
+   "text": "CINCO NOMBRES",
+   "x": 2350,
+   "y": 1560,
+   "w": 260,
+   "rot": -8
+  }
+ ],
+ "links": [
+  {
+   "from": "mamba",
+   "to": "sofie",
+   "color": "rojo",
+   "style": "solido",
+   "label": "n.º 1"
+  },
+  {
+   "from": "mamba",
+   "to": "sheng",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "mamba",
+   "to": "leung",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "mamba",
+   "to": "oren",
+   "color": "violeta",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "mamba",
+   "to": "bill",
+   "color": "negro",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "vibora",
+   "to": "johnnymo",
+   "color": "rojo",
+   "style": "solido",
+   "label": "n.º 1"
+  },
+  {
+   "from": "vibora",
+   "to": "tonyma",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "vibora",
+   "to": "sheng",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "vibora",
+   "to": "oren",
+   "color": "violeta",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "vibora",
+   "to": "bill",
+   "color": "negro",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "martillo",
+   "to": "clavos",
+   "color": "rojo",
+   "style": "solido",
+   "label": "n.º 1"
+  },
+  {
+   "from": "martillo",
+   "to": "alas",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "martillo",
+   "to": "tonyma",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "martillo",
+   "to": "budd",
+   "color": "violeta",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "martillo",
+   "to": "bill",
+   "color": "negro",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "placa",
+   "to": "lau",
+   "color": "rojo",
+   "style": "solido",
+   "label": "n.º 1"
+  },
+  {
+   "from": "placa",
+   "to": "sheng",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "placa",
+   "to": "alas",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "placa",
+   "to": "budd",
+   "color": "violeta",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "placa",
+   "to": "bill",
+   "color": "negro",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "ojo",
+   "to": "elle",
+   "color": "rojo",
+   "style": "solido",
+   "label": "n.º 1"
+  },
+  {
+   "from": "ojo",
+   "to": "leung",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "ojo",
+   "to": "tonyma",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "ojo",
+   "to": "oren",
+   "color": "violeta",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "ojo",
+   "to": "bill",
+   "color": "negro",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "mecha",
+   "to": "pei",
+   "color": "rojo",
+   "style": "solido",
+   "label": "n.º 1"
+  },
+  {
+   "from": "mecha",
+   "to": "alas",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "mecha",
+   "to": "leung",
+   "color": "ambar",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "mecha",
+   "to": "budd",
+   "color": "violeta",
+   "style": "punteado",
+   "label": ""
+  },
+  {
+   "from": "mecha",
+   "to": "bill",
+   "color": "negro",
+   "style": "punteado",
+   "label": ""
+  }
+ ]
+}

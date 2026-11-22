@@ -1,0 +1,74 @@
+{
+  "id": "mr-kill-mice",
+  "title": "MR- Kill Mice",
+  "version": "1.0.0",
+  "description": "La Lista del Sobre Rojo. Venganza ratonil de una sesión para Mausritter: seis ratones con cinco nombres cada uno, una boda que salta por los aires y un club nocturno lleno de enmascarados. Aventura completa con reglas propias en Foundry (Masillas, Turba y Esquiva acrobática, dados explosivos, Lista de Muerte con tachones, secuencias y el daño escalable de Bill), arte propio, música e integración con MR- Dirección y MR- Pizarra. Convive con MR- Mausritter en español y Mausritter Combat Carousel.",
+  "authors": [
+    {
+      "name": "Manuel Romera Chinchilla",
+      "url": "https://github.com/ManuRomera"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "14"
+  },
+  "esmodules": [
+    "scripts/main.mjs"
+  ],
+  "styles": [
+    "styles/mr-kill-mice.css"
+  ],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    }
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "mausritter",
+        "type": "system",
+        "compatibility": {
+          "minimum": "0.6.1",
+          "verified": "0.6.1"
+        }
+      }
+    ],
+    "recommends": [
+      {
+        "id": "mr-direccion",
+        "type": "module",
+        "manifest": "https://github.com/ManuRomera/mr-direccion/releases/latest/download/module.json"
+      },
+      {
+        "id": "mr-pizarra",
+        "type": "module",
+        "manifest": "https://github.com/ManuRomera/mr-pizarra/releases/latest/download/module.json"
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "aventura",
+      "label": "MR- Kill Mice",
+      "path": "packs/aventura",
+      "type": "Adventure",
+      "system": "mausritter",
+      "ownership": {
+        "PLAYER": "NONE",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "socket": true,
+  "url": "https://github.com/ManuRomera/mr-kill-mice",
+  "manifest": "https://github.com/ManuRomera/mr-kill-mice/releases/latest/download/module.json",
+  "download": "https://github.com/ManuRomera/mr-kill-mice/releases/download/v1.0.0/mr-kill-mice.zip",
+  "readme": "https://github.com/ManuRomera/mr-kill-mice#readme",
+  "bugs": "https://github.com/ManuRomera/mr-kill-mice/issues",
+  "license": "https://github.com/ManuRomera/mr-kill-mice/blob/main/LICENSE"
+}

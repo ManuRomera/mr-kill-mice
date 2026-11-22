@@ -1,0 +1,215 @@
+/* MR- Kill Mice · cartel de venganza: amarillo Bruce Lee, tinta sumi, rojo de sobre ceremonial y azul eléctrico en el Acto II.
+   Regla de la casa: nunca se cambia la fuente de los iconos (<i class="fa-…">). */
+@font-face { font-family: "RM Anton"; src: url("../assets/fonts/Anton-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Bebas"; src: url("../assets/fonts/BebasNeue-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Maquina"; src: url("../assets/fonts/SpecialElite-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Mano"; src: url("../assets/fonts/Caveat-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Mano"; font-weight: 700; src: url("../assets/fonts/Caveat-Bold.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Crimson"; src: url("../assets/fonts/CrimsonText-Regular.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Crimson"; font-weight: 700; src: url("../assets/fonts/CrimsonText-Bold.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "RM Crimson"; font-style: italic; src: url("../assets/fonts/CrimsonText-Italic.ttf") format("truetype"); font-display: swap; }
+
+:root {
+  --rm-amarillo: #F5C518; --rm-sangre: #9E0B23; --rm-rojo: #C8102E; --rm-tinta: #121212; --rm-papel: #F6F1E3; --rm-papel2: #E9E0C8; --rm-azul: #1E40AF;
+  --rm-gris: #5f5a52; --rm-escala: 1;
+}
+body.mrkm-texto-grande { --rm-escala: 1.2; }
+body.mrkm-alto-contraste { --rm-papel: #fffdf6; --rm-papel2: #fff4cf; --rm-gris: #2b2925; --rm-amarillo: #ffd21a; }
+
+/* ---------------- Ventanas del módulo (kit mr-pantallas) ---------------- */
+.mr-kill-mice.application { max-width: calc((100vw - 8px) / var(--km-esc-ventana, 1)); max-height: calc((100vh - 1.5 * var(--hotbar-height, 52px)) / var(--km-esc-ventana, 1)); }
+.mr-kill-mice.application .window-content { overflow: auto; min-height: 0; background: var(--rm-papel); color: var(--rm-tinta); font-size: calc(14px * var(--rm-escala)); }
+.mr-kill-mice.application .window-content:has(> form.dialog-form) { overflow: hidden; }
+.mr-kill-mice.application form.dialog-form { display: flex; flex-direction: column; flex: 1 1 auto; min-height: 0; }
+.mr-kill-mice.application form.dialog-form > .dialog-content { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
+.mr-kill-mice.application form.dialog-form > .form-footer { flex: none; }
+.mr-kill-mice.application .window-header { background: var(--rm-tinta); color: var(--rm-amarillo); border-bottom: 3px solid var(--rm-amarillo); }
+.mr-kill-mice.application .window-header .window-title { font-family: "RM Bebas", sans-serif; letter-spacing: .06em; font-size: 1.25em; }
+.mr-kill-mice.application input[type=text] { background: #fffaf0; color: var(--rm-tinta); }
+
+/* ---------------- Panel del DJ ---------------- */
+.mrkm-panel .mrkm-panel-cuerpo { display: flex; flex-direction: column; gap: .5rem; padding: .25rem; }
+.mrkm-panel details { border: 2px solid var(--rm-tinta); background: #fffaf0; box-shadow: 4px 4px 0 var(--rm-amarillo); }
+.mrkm-panel summary { cursor: pointer; padding: .35rem .6rem; background: var(--rm-tinta); color: var(--rm-papel); font-family: "RM Bebas", sans-serif; font-size: 1.35em; letter-spacing: .05em; list-style: none; }
+.mrkm-panel summary::-webkit-details-marker { display: none; }
+.mrkm-panel summary:focus-visible { outline: 3px solid var(--rm-amarillo); outline-offset: -3px; }
+.mrkm-panel details[open] summary { background: var(--rm-sangre); }
+.mrkm-panel .mrkm-sec { padding: .5rem .6rem .7rem; display: flex; flex-direction: column; gap: .45rem; }
+.mrkm-panel h4 { margin: .4rem 0 0; font-family: "RM Bebas", sans-serif; font-size: 1.2em; letter-spacing: .04em; border-bottom: 2px solid var(--rm-amarillo); color: var(--rm-tinta); }
+.mrkm-panel button { font-family: "RM Bebas", sans-serif; letter-spacing: .04em; font-size: 1.05em; background: var(--rm-amarillo); color: var(--rm-tinta); border: 2px solid var(--rm-tinta); border-radius: 0; box-shadow: 2px 2px 0 var(--rm-tinta); padding: .1rem .55rem; flex: 0 0 auto; width: auto; line-height: 1.6; }
+.mrkm-panel button:hover { background: var(--rm-tinta); color: var(--rm-amarillo); }
+.mrkm-panel button:focus-visible { outline: 3px solid var(--rm-sangre); outline-offset: 1px; }
+.mrkm-panel button.mrkm-discreto { background: transparent; box-shadow: none; align-self: flex-start; }
+.mrkm-panel .mrkm-ayuda { font-style: italic; color: var(--rm-gris); margin: 0; }
+.mrkm-panel .mrkm-fila { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; }
+.mrkm-panel .mrkm-fila > span { flex: 1 1 12rem; }
+.mrkm-panel select { flex: 1 1 8rem; min-width: 0; background: #fffaf0; color: var(--rm-tinta); }
+.mrkm-reparto { list-style: none; margin: 0; padding: 0; display: grid; gap: .3rem; }
+.mrkm-reparto li { display: grid; grid-template-columns: 44px 1fr minmax(8rem, 12rem) auto; gap: .45rem; align-items: center; }
+.mrkm-reparto img, .mrkm-chip img { width: 44px; height: 44px; object-fit: cover; object-position: top; border: 2px solid var(--rm-tinta); background: var(--rm-papel2); }
+.mrkm-reparto span { font-family: "RM Bebas", sans-serif; font-size: 1.3em; }
+.mrkm-reloj-x { display: grid; grid-template-columns: 1fr auto auto auto; grid-template-rows: auto auto; gap: .1rem .4rem; align-items: center; padding-bottom: .35rem; border-bottom: 1px dashed var(--rm-gris); }
+.mrkm-reloj > span { font-family: "RM Bebas", sans-serif; font-size: 1.15em; }
+.mrkm-reloj strong { font-family: "RM Anton", sans-serif; font-size: 1.4em; min-width: 3.5em; text-align: center; color: var(--rm-sangre); }
+.mrkm-reloj small { grid-column: 1 / -1; color: var(--rm-gris); font-size: .9em; }
+.mrkm-escenas { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: .4rem; }
+.mrkm-escenas button { width: 100%; padding: 0; display: flex; flex-direction: column; background: var(--rm-tinta); color: var(--rm-papel); box-shadow: none; }
+.mrkm-escenas img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border: 0; display: block; }
+.mrkm-escenas span { padding: .1rem .3rem; font-size: .95em; text-align: left; }
+.mrkm-escenas li.activa button { outline: 3px solid var(--rm-amarillo); }
+.mrkm-chips { display: flex; flex-wrap: wrap; gap: .3rem; }
+.mrkm-chip { display: inline-flex; align-items: center; gap: .3rem; padding: .1rem .4rem .1rem .1rem; border: 1px solid var(--rm-gris); background: var(--rm-papel); cursor: pointer; }
+.mrkm-chip img { width: 28px; height: 28px; }
+.mrkm-chip:has(input:checked) { background: var(--rm-amarillo); border-color: var(--rm-tinta); }
+
+/* Rótulo grande al avanzar un reloj */
+.mrkm-rotulo { position: fixed; left: 50%; top: 18%; transform: translateX(-50%) rotate(-2deg); z-index: 9000; pointer-events: none; text-align: center;
+  background: var(--rm-amarillo); color: var(--rm-tinta); border: 5px solid var(--rm-tinta); box-shadow: 10px 10px 0 var(--rm-tinta); padding: .6rem 2rem 1rem;
+  animation: mrkm-entra .35s cubic-bezier(.2, 1.4, .4, 1); transition: opacity .9s, transform .9s; max-width: 80vw; }
+.mrkm-rotulo strong { display: block; font-family: "RM Anton", sans-serif; font-size: clamp(48px, 9vw, 120px); line-height: 1; }
+.mrkm-rotulo span { display: block; font-family: "RM Maquina", monospace; font-size: clamp(16px, 1.8vw, 24px); }
+.mrkm-rotulo-reloj { background: var(--rm-rojo); color: var(--rm-papel); }
+.mrkm-rotulo-tachon strong { position: relative; display: inline-block; }
+.mrkm-rotulo-tachon strong::after { content: ""; position: absolute; left: -4%; right: -4%; top: 52%; height: .16em; background: var(--rm-rojo); transform: rotate(-3deg) scaleX(0); transform-origin: left;
+  animation: mrkm-tacha .5s .35s cubic-bezier(.6, 0, .2, 1) forwards; }
+@keyframes mrkm-tacha { to { transform: rotate(-3deg) scaleX(1); } }
+.mrkm-rotulo.fuera { opacity: 0; transform: translateX(-50%) rotate(-2deg) translateY(-30px); }
+@keyframes mrkm-entra { from { transform: translateX(-50%) rotate(-2deg) scale(.4); opacity: 0; } }
+
+/* Destellos */
+.mrkm-destello { position: fixed; inset: 0; z-index: 8999; pointer-events: none; animation: mrkm-flash 1.1s ease-out forwards; }
+.mrkm-destello-rojo { background: radial-gradient(circle, rgba(184, 29, 19, .55), rgba(0, 0, 0, .0) 70%); }
+.mrkm-destello-amarillo { background: radial-gradient(circle, rgba(242, 194, 27, .45), rgba(0, 0, 0, 0) 70%); }
+.mrkm-destello-negro { background: rgba(0, 0, 0, .55); }
+.mrkm-destello-azul { background: rgba(30, 64, 175, .55); }
+@keyframes mrkm-flash { 0% { opacity: 0; } 12% { opacity: 1; } 100% { opacity: 0; } }
+
+@media (prefers-reduced-motion: reduce) { .mrkm-rotulo { animation: none; } .mrkm-destello { display: none; } }
+
+/* ---------------- Chat ---------------- */
+.mrkm-chat { background: var(--rm-papel); color: var(--rm-tinta); border: 2px solid var(--rm-tinta); box-shadow: 3px 3px 0 var(--rm-amarillo); padding: .4rem .55rem; font-size: calc(1em * var(--rm-escala)); }
+.mrkm-chat header { display: flex; align-items: center; gap: .5rem; margin-bottom: .3rem; }
+.mrkm-chat header img { width: 64px; height: 64px; object-fit: contain; border: 0; background: var(--rm-papel2); flex: none; }
+.mrkm-chat h3 { font-family: "RM Bebas", sans-serif; font-size: 1.45em; letter-spacing: .04em; margin: 0; border: 0; color: var(--rm-tinta); }
+.mrkm-chat.mrkm-alerta { box-shadow: 3px 3px 0 var(--rm-rojo); }
+.mrkm-chat.mrkm-alerta h3 { color: var(--rm-sangre); }
+.mrkm-chat .mrkm-tirada strong { font-family: "RM Anton", sans-serif; font-size: 1.7em; color: var(--rm-sangre); }
+.mrkm-chat .mrkm-motivo { font-family: "RM Maquina", monospace; margin: 0; }
+.mrkm-chat .mrkm-cita { font-family: "RM Maquina", monospace; font-size: 1.3em; text-align: center; }
+.mrkm-chat ol, .mrkm-chat ul { margin: .2rem 0; padding-left: 1.2rem; }
+
+/* ---------------- Diarios de la aventura ---------------- */
+/* Papel y tinta propios: no heredan el color del tema claro u oscuro de Foundry. */
+.mrkm-diario, .mrkm-dosier { color: var(--rm-tinta); background: var(--rm-papel); padding: 1rem 1.2rem; }
+:is(.mrkm-diario, .mrkm-dosier) :is(h1, h2, h4, h5, h6, p, li, dt, dd, td, blockquote, strong, em, b, i:not([class*="fa-"]), span, figcaption) { color: inherit; }
+:is(.mrkm-diario, .mrkm-dosier) a.content-link { color: var(--rm-sangre); background: #fff6d6; border-color: var(--rm-sangre); }
+.mrkm-diario { font-family: "RM Crimson", serif; font-size: calc(17px * var(--rm-escala)); line-height: 1.45; color: var(--rm-tinta); }
+.mrkm-diario p { text-align: justify; hyphens: auto; }
+.mrkm-diario .mrkm-kicker { font-family: "RM Bebas", sans-serif; letter-spacing: .14em; color: var(--rm-sangre); font-size: 1.05em; margin: 0; }
+.mrkm-diario h1, .mrkm-diario h2 { font-family: "RM Anton", sans-serif; font-weight: normal; letter-spacing: .01em; border-bottom: 4px solid var(--rm-amarillo); color: var(--rm-tinta); }
+.mrkm-diario h3 { font-family: "RM Bebas", sans-serif; font-size: 1.5em; letter-spacing: .04em; color: var(--rm-sangre); border: 0; margin-top: 1.1em; }
+.mrkm-diario blockquote.mrkm-lectura { background: #fff6d6; border: 0; border-left: 6px solid var(--rm-amarillo); padding: .6rem .9rem; font-style: italic; margin: .8rem 0; }
+.mrkm-diario .mrkm-regla, .mrkm-diario .mrkm-caja { border: 2px solid var(--rm-tinta); background: #fffaf0; padding: .5rem .8rem; box-shadow: 4px 4px 0 var(--rm-amarillo); margin: .8rem 0; }
+.mrkm-diario .mrkm-regla { box-shadow: 4px 4px 0 var(--rm-sangre); }
+.mrkm-diario .mrkm-regla h4, .mrkm-diario .mrkm-caja h4 { font-family: "RM Bebas", sans-serif; font-size: 1.35em; letter-spacing: .04em; margin: 0 0 .2rem; color: var(--rm-sangre); }
+.mrkm-diario .mrkm-rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: .6rem; }
+.mrkm-diario .mrkm-rejilla p { margin: 0; padding: .5rem .7rem; background: var(--rm-tinta); color: var(--rm-papel); text-align: left; }
+.mrkm-diario .mrkm-rejilla p strong { color: var(--rm-amarillo); font-family: "RM Bebas", sans-serif; font-size: 1.2em; letter-spacing: .05em; display: block; }
+.mrkm-diario table { border-collapse: collapse; width: 100%; font-size: .92em; background: #fffaf0; }
+.mrkm-diario th { background: var(--rm-tinta); color: var(--rm-amarillo); font-family: "RM Bebas", sans-serif; font-size: 1.1em; letter-spacing: .04em; text-align: left; padding: .25rem .4rem; }
+.mrkm-diario td { border-bottom: 1px solid var(--rm-papel2); padding: .3rem .4rem; vertical-align: top; }
+.mrkm-diario figure { margin: .8rem 0; }
+.mrkm-diario figure img { width: 100%; border: 3px solid var(--rm-tinta); }
+.mrkm-diario figure.derecha { float: right; width: 42%; margin: 0 0 .6rem 1rem; }
+.mrkm-diario figcaption { font-family: "RM Maquina", monospace; font-size: .8em; color: var(--rm-gris); }
+/* Dosier secreto */
+.mrkm-dosier { font-family: "RM Crimson", serif; font-size: calc(16px * var(--rm-escala)); line-height: 1.45; background: var(--rm-papel); padding: 1rem 1.2rem; border-left: 10px solid var(--pj, var(--rm-amarillo)); }
+.mrkm-dosier h1 { font-family: "RM Anton", sans-serif; font-weight: normal; border: 0; margin: 0; }
+.mrkm-dosier .mrkm-sello { display: inline-block; color: var(--rm-rojo); border: 3px solid var(--rm-rojo); padding: 0 .5rem; transform: rotate(-4deg); font-family: "RM Bebas", sans-serif; font-size: 1.4em; letter-spacing: .1em; margin-bottom: .5rem; }
+.mrkm-dosier img.mrkm-foto { float: right; width: 34%; margin: 0 0 .5rem 1rem; border: 6px solid #fff; box-shadow: 2px 3px 6px rgba(0, 0, 0, .35); transform: rotate(2deg); }
+.mrkm-dosier h3 { font-family: "RM Bebas", sans-serif; font-size: 1.35em; letter-spacing: .05em; border-bottom: 2px solid var(--rm-tinta); color: var(--rm-sangre); }
+.mrkm-dosier .mrkm-stats { display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0; }
+.mrkm-dosier .mrkm-stats span { background: var(--rm-tinta); color: var(--rm-amarillo); padding: .1rem .5rem; font-family: "RM Bebas", sans-serif; font-size: 1.2em; }
+.mrkm-dosier dl { display: grid; grid-template-columns: max-content 1fr; gap: .15rem .6rem; }
+.mrkm-dosier dt { font-weight: bold; }
+.mrkm-dosier dd { margin: 0; }
+
+/* ---------------- HUD «La Lista» ---------------- */
+.mrkm-hud { position: fixed; top: 190px; left: 64px; z-index: 70; width: 19rem; background: var(--rm-papel); color: var(--rm-tinta);
+  border: 3px solid var(--rm-tinta); box-shadow: 5px 5px 0 var(--rm-amarillo), 0 6px 18px rgba(0, 0, 0, .45); font-size: calc(13px * var(--rm-escala)); user-select: none;
+  max-width: calc(100vw - 24px); max-height: calc(100vh - 230px - var(--hotbar-height, 52px)); overflow-y: auto; }
+.mrkm-hud.siluetas { box-shadow: 5px 5px 0 var(--rm-azul), 0 0 24px rgba(30, 64, 175, .8); }
+.mrkm-hud-cab { display: flex; align-items: center; gap: .45rem; background: var(--rm-tinta); color: var(--rm-amarillo); padding: .25rem .5rem; }
+.mrkm-hud-vol { font-family: "RM Anton", sans-serif; font-size: 1.5em; line-height: 1; letter-spacing: .02em; }
+.mrkm-hud-sec { font-family: "RM Bebas", sans-serif; font-size: 1.15em; letter-spacing: .06em; color: var(--rm-papel); flex: 1; }
+.mrkm-pips { display: inline-flex; gap: 3px; }
+.mrkm-pip { width: .8em; height: .8em; border: 2px solid currentColor; transform: skewX(-12deg); background: transparent; }
+.mrkm-pip.on { background: var(--rm-rojo); border-color: var(--rm-rojo); }
+.mrkm-mm { display: inline-flex; align-items: center; gap: 2px; }
+.mrkm-mm b { min-width: 1.4em; text-align: center; font-family: "RM Anton", sans-serif; }
+.mrkm-hud button { font-family: "RM Bebas", sans-serif; letter-spacing: .04em; font-size: 1.05em; line-height: 1.3; padding: .05rem .45rem; border-radius: 0; border: 2px solid var(--rm-tinta);
+  background: var(--rm-amarillo); color: var(--rm-tinta); width: auto; flex: none; cursor: pointer; }
+.mrkm-hud button:hover { background: var(--rm-tinta); color: var(--rm-amarillo); }
+.mrkm-mm button { width: 1.6em; height: 1.6em; padding: 0; line-height: 1; border-width: 1px; }
+.mrkm-hud-cab .mrkm-mm button { border-color: var(--rm-amarillo); }
+.mrkm-hud button:focus-visible { outline: 3px solid var(--rm-rojo); }
+.mrkm-hud-ini { list-style: none; margin: 0; padding: .25rem .5rem; display: flex; flex-wrap: wrap; gap: .2rem .5rem; border-bottom: 2px solid var(--rm-tinta); background: var(--rm-papel2); }
+.mrkm-hud-ini li { font-size: .95em; } .mrkm-hud-ini li b { font-family: "RM Anton", sans-serif; color: var(--rm-sangre); }
+.mrkm-hud-ini li.pj { font-weight: 700; }
+.mrkm-hud-lista, .mrkm-lista { list-style: none; counter-reset: km; margin: .35rem .5rem; padding: .3rem .4rem .3rem 2.2rem; background: #FBE7A1;
+  background-image: repeating-linear-gradient(transparent 0 1.55em, rgba(30, 64, 175, .25) 1.55em 1.62em); border-left: 2px solid var(--rm-rojo); }
+.mrkm-hud-lista li, .mrkm-lista li { counter-increment: km; position: relative; font-family: "RM Mano", cursive; font-weight: 700; font-size: 1.35em; line-height: 1.15; color: var(--rm-tinta); }
+.mrkm-hud-lista li::before, .mrkm-lista li::before { content: counter(km) "."; position: absolute; left: -1.6rem; color: var(--rm-rojo); }
+.mrkm-hud-lista li.tachado span { text-decoration: line-through; text-decoration-color: var(--rm-rojo); text-decoration-thickness: .22em; opacity: .75; }
+.mrkm-hud-mas { margin: .2rem .5rem; font-family: "RM Bebas", sans-serif; font-size: 1.15em; letter-spacing: .04em; }
+.mrkm-inercia { color: var(--rm-rojo); }
+.mrkm-hud-pjs { list-style: none; margin: 0 .4rem; padding: 0; display: grid; gap: 2px; }
+.mrkm-hud-pjs li { display: grid; grid-template-columns: 26px 1fr auto auto; gap: .35rem; align-items: center; }
+.mrkm-hud-pjs img { width: 26px; height: 26px; object-fit: cover; object-position: top; border: 1px solid var(--rm-tinta); }
+.mrkm-hud-pjs span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mrkm-hud-botones { display: flex; flex-wrap: wrap; gap: .3rem; padding: .35rem .5rem; }
+.mrkm-hud-max { margin: 0 .5rem .35rem; font-size: .9em; color: var(--rm-gris); }
+
+/* ---------------- Diálogo de ataque ---------------- */
+.mrkm-ataque { display: flex; flex-direction: column; gap: .45rem; color: var(--rm-tinta); }
+.mrkm-ataque fieldset { border: 2px solid var(--rm-tinta); padding: .3rem .45rem .45rem; display: flex; flex-wrap: wrap; gap: .3rem; }
+.mrkm-ataque legend { font-family: "RM Bebas", sans-serif; font-size: 1.15em; letter-spacing: .05em; padding: 0 .3rem; }
+.mrkm-ataque input[type=number] { width: 4em; }
+.mrkm-ataque fieldset.mrkm-objetivos { display: grid; grid-template-columns: 1fr 1fr; }
+.mrkm-ataque .mrkm-en-lista { color: var(--rm-rojo); font-family: "RM Mano", cursive; font-size: 1.15em; }
+.mrkm-ataque .mrkm-cinco { background: var(--rm-rojo); color: #fff; font-family: "RM Bebas", sans-serif; letter-spacing: .05em; }
+.mrkm-ataque .mrkm-ayuda { margin: 0; font-style: italic; color: var(--rm-gris); }
+
+/* ---------------- Panel: enemigos y Listas ---------------- */
+.mrkm-panel button.activo { background: var(--rm-tinta); color: var(--rm-amarillo); }
+.mrkm-enemigos { list-style: none; margin: 0; padding: 0; display: grid; gap: .25rem; }
+.mrkm-enemigos li { display: grid; grid-template-columns: 40px 1fr auto auto auto auto; gap: .35rem; align-items: center; }
+.mrkm-enemigos li.caido { opacity: .55; } .mrkm-enemigos li.caido span { text-decoration: line-through; text-decoration-color: var(--rm-rojo); }
+.mrkm-enemigos img, .mrkm-lista-dj img { width: 40px; height: 40px; object-fit: cover; object-position: top; border: 2px solid var(--rm-tinta); }
+.mrkm-lista-dj { display: grid; grid-template-columns: 40px 1fr; gap: .1rem .5rem; align-items: center; padding: .3rem 0; border-bottom: 1px dashed var(--rm-gris); }
+.mrkm-lista-dj ol { grid-column: 1 / -1; margin: 0; padding-left: 1.5rem; display: flex; flex-wrap: wrap; gap: .2rem 1.6rem; }
+.mrkm-lista-dj ol button { font-family: "RM Mano", cursive; font-weight: 700; font-size: 1.15em; background: #FBE7A1; box-shadow: none; }
+.mrkm-lista-dj ol button.tachado { text-decoration: line-through; text-decoration-color: var(--rm-rojo); text-decoration-thickness: 3px; opacity: .7; }
+.mrkm-conds { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: .25rem; }
+.mrkm-conds button { font-size: .9em; background: var(--rm-papel2); box-shadow: none; }
+
+/* ---------------- Tarjetas de chat de Kill Mice ---------------- */
+.mrkm-chat .mrkm-explota { color: #fff; background: var(--rm-rojo); padding: 0 .35rem; font-family: "RM Bebas", sans-serif; letter-spacing: .06em; }
+.mrkm-chat .mrkm-notas { font-size: .9em; color: var(--rm-gris); margin: 0; }
+.mrkm-chat.mrkm-carniceria { box-shadow: 3px 3px 0 var(--rm-tinta); }
+.mrkm-chat.mrkm-tachon { background: #FBE7A1; box-shadow: 4px 4px 0 var(--rm-rojo); }
+.mrkm-chat .mrkm-tachado { font-family: "RM Mano", cursive; font-weight: 700; font-size: 2em; text-align: center; margin: .1rem 0; text-decoration: line-through; text-decoration-color: var(--rm-rojo); text-decoration-thickness: .2em; }
+.mrkm-chat .mrkm-cinco { background: var(--rm-tinta); color: var(--rm-amarillo); font-family: "RM Bebas", sans-serif; letter-spacing: .05em; padding: .2rem .4rem; text-align: center; }
+.mrkm-chat.mrkm-turba .mrkm-botones { display: flex; gap: .3rem; flex-wrap: wrap; }
+.mrkm-chat .mrkm-botones button { font-family: "RM Bebas", sans-serif; font-size: 1.1em; letter-spacing: .04em; background: var(--rm-amarillo); color: var(--rm-tinta); border: 2px solid var(--rm-tinta); border-radius: 0; flex: 1 1 8rem; }
+.mrkm-chat .mrkm-botones button:disabled { opacity: .45; }
+.mrkm-chat.mrkm-secuencia ol { list-style: none; padding: 0; } .mrkm-chat.mrkm-secuencia li b { display: inline-block; min-width: 2em; font-family: "RM Anton", sans-serif; color: var(--rm-sangre); }
+.mrkm-chat.mrkm-secuencia li.pj { font-weight: 700; }
+.mrkm-chat.mrkm-moneda { box-shadow: 3px 3px 0 #b8860b; }
+.mrkm-chat .mrkm-ayuda { font-style: italic; color: var(--rm-gris); margin: .2rem 0 0; }
+
+/* ---------------- Diarios: fichas de personajes ---------------- */
+.mrkm-diario .mrkm-caja.mrkm-pj { border-left: 10px solid var(--pj, var(--rm-amarillo)); }
+.mrkm-diario .mrkm-caja ul { margin: .2rem 0; }
+.mrkm-dosier .mrkm-lista { margin: .4rem 0; }
+.mrkm-dosier .mrkm-sello { color: var(--rm-rojo); border-color: var(--rm-rojo); }
