@@ -40,7 +40,7 @@
 | Objetos | 35: el arsenal reciclado, equipo, objetos clave, la Lista y las 3 condiciones |
 | Diarios | Guía del Narrador por capítulos, siete dosieres con su Lista escrita a mano, ayudas de juego y «Cómo se juega en Foundry» |
 | Tablas | 4: giros de pelea de cada volumen, sentencias al tachar y escenas postcréditos |
-| Audio | 8 temas, 6 motivos, 3 ambientes y 14 efectos de koto, taiko, gong y funk, todos propios y en bucle sin corte |
+| Audio | Una banda sonora de 8 temas y 6 motivos con taiko, koto, guitarra western y funk-rock de los setenta, toda de Kevin MacLeod. Además, 3 ambientes y 14 efectos de grabaciones reales. Todo pasa por el mismo master y los bucles empalman a compás |
 | Macros | 7 |
 | Libro | [PDF](docs/pdf/Kill-Mice.pdf) con la aventura, los dosieres, las Listas recortables y los planos |
 
@@ -91,10 +91,10 @@ Los personajes se entregan sin asignar: repártelos desde el panel del Narrador.
 
 - El texto vive en `texto/aventura.md` y los datos (Listas, PNJ, arsenal, tablas) en `texto/datos.py`.
 - `python3 tools/foundry.py` genera `_data/aventura.json`, las secuencias y los paquetes de Dirección y Pizarra. `npm run build` compila el compendio y el zip.
-- `python3 tools/arte.py` prepara el arte, `python3 tools/audio.py` sintetiza la música y `python3 tools/libro.py` hace el PDF.
+- `python3 tools/arte.py` prepara el arte, `python3 tools/banda.py` monta la banda sonora desde las grabaciones originales y `python3 tools/libro.py` hace el PDF.
 
 ## Créditos y licencia
 
-Historia y diseño: Manuel Romera Chinchilla. Módulo, libro, herramientas y revisión del texto y las reglas: Claude, bajo su dirección. Homenaje a *Kill Bill* de Quentin Tarantino y al cine de artes marciales de los setenta, sobre la premisa de *Red Packet Rumble* (Atlas Games). Imágenes generadas con IA y firmadas con la marca MR. Música y efectos de síntesis propia.
+Historia y diseño: Manuel Romera Chinchilla. Módulo, libro, herramientas y revisión del texto y las reglas: Claude, bajo su dirección. Homenaje a *Kill Bill* de Quentin Tarantino y al cine de artes marciales de los setenta, sobre la premisa de *Red Packet Rumble* (Atlas Games). Imágenes generadas con IA y firmadas con la marca MR. Música de Kevin MacLeod (incompetech.com, CC BY 4.0) y efectos de Freesound (CC0): créditos completos en [NOTICE.md](NOTICE.md).
 
 CC BY-NC-SA 4.0. Mausritter es de Losing Games. Es una obra de aficionado y no oficial. Detalles en [NOTICE.md](NOTICE.md).

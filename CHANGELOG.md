@@ -2,6 +2,7 @@
 
 ## 1.1.0
 
+- **Banda sonora nueva.** La música sintética deja paso a una banda sonora de verdad, toda de Kevin MacLeod (CC BY 4.0). Taiko y koto para el Jardín, guitarra western para la venganza, funk-rock de los setenta para el tema principal y surf para la Casa de las Hojas Azules. Los 14 efectos y los 3 ambientes son grabaciones reales de Freesound (CC0). Antes faltaban once efectos en la descarga. Todo pasa por el mismo master de cinta, los efectos comparten sala y los bucles empalman a compás, sin hueco. Créditos en NOTICE.md, en las listas de reproducción y en «Cómo se juega en Foundry».
 - **Portada del mundo.** Al entrar como DJ, si el mundo no tiene imagen de fondo ni descripción, se ponen las de Kill Mice: un cartel nuevo para la pantalla de entrada y la tarjeta del mundo. Nunca pisa lo que ya tengas.
 - **Tiradas a lo Kill Mice.** Las tarjetas de tirada del chat (característica, arma, hechizo) y los diálogos de tirada de la ficha de Mausritter llevan la estética de la aventura: cabecera negra y amarilla, resultado en grande, daño en mancha roja. Solo cambia el aspecto: los botones de Combat Carousel y la traducción de MR- Mausritter en español siguen igual, también con su tema oscuro. Se apaga en los ajustes («Tiradas a lo Kill Mice»).
 

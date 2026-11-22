@@ -5,6 +5,41 @@
 - El tono homenajea el cine de venganza de los setenta y el de acción de Hong Kong. Ningún diálogo ni imagen procede de esas películas.
 - **Historia y diseño:** Manuel Romera Chinchilla. La redacción del texto, las reglas para Foundry, el módulo, el libro en PDF y las herramientas se hicieron con Claude bajo la dirección del autor y con su revisión.
 - **Imágenes:** generadas con IA (Codex, con la generación de imágenes de ChatGPT) para esta aventura, y firmadas con la marca MR.
-- **Música y efectos:** síntesis original con `tools/audio.py` de este repositorio.
+- **Música:** Kevin MacLeod ([incompetech.com](https://incompetech.com)). Licencia Creative Commons Attribution 4.0 ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)). Las pistas están recortadas en bucle, ecualizadas y normalizadas con `tools/banda.py`.
+  - Tema principal: «RetroFuture Dirty»
+  - El banquete: «Ishikari Lore»
+  - Pelea en el jardín: «Mountain Emperor»
+  - Los 88 Maníacos: «Big Mojo»
+  - Siluetas azules: «Ujangong Mix»
+  - La Casa de las Hojas Azules: «Surf Inspector»
+  - Huida: «Robo-Western»
+  - Epílogo: «Pale Rider»
+  - Calma: «Senbazuru»
+  - Tensión: «Asian Drums»
+  - Venganza: «Smoking Gun»
+  - Ralentí: «Finding Movement»
+  - Triunfo: «Neo Western»
+  - Derrota: «Anamalie»
+- **Efectos y ambientes:** grabaciones de [Freesound](https://freesound.org) con licencia [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/) (dominio público). Mezcladas, recortadas y pasadas por el mismo master con `tools/banda.py`. Se citan por cortesía:
+  - samurai slash, de nekoninja (freesound.org/s/370204)
+  - unsheathe sword anime like, de marchelonia (freesound.org/s/588276)
+  - single pistol gunshot 2, de morganpurkis (freesound.org/s/371440)
+  - clean machine gun burst, de qubodup (freesound.org/s/482122)
+  - shotgun pump, de Dentrabert (freesound.org/s/673320)
+  - firecrackers spring festival beijing, de Lenguaverde (freesound.org/s/381868)
+  - low gong hit, de Qvantor (freesound.org/s/879271)
+  - alarm siren fast oscillations, de Kinoton (freesound.org/s/420661)
+  - police siren, de TitanKaempfer (freesound.org/s/746302)
+  - marker pen writes on paper, de SSkiba88 (freesound.org/s/751055)
+  - growl and roar, de Jofae (freesound.org/s/366837)
+  - glass panel shattering, de LukaCafuka (freesound.org/s/758207)
+  - chain rattling, de georgesavic (freesound.org/s/593458)
+  - power down 03, de newagesoup (freesound.org/s/348250)
+  - cheers, de dazza007 (freesound.org/s/433721)
+  - crowded restaurant background, de geoffvt (freesound.org/s/875485)
+  - nighttime backyard frogs crickets, de inkedflorist (freesound.org/s/711047)
+  - neon light buzz, de Julien_Matthey (freesound.org/s/118340)
+  - city night rain light, de ragamuffin (freesound.org/s/197213)
+  - bass thumps through wall, de CHallSmith (freesound.org/s/870504)
 - **Tipografías:** Anton, Bebas Neue, Special Elite, Caveat y Crimson Text, todas con licencia SIL Open Font License.
-- **Licencia:** CC BY-NC-SA 4.0 para el texto, las imágenes, el audio y el código de este módulo.
+- **Licencia:** CC BY-NC-SA 4.0 para el texto, las imágenes y el código de este módulo. La música conserva su licencia CC BY 4.0 y los efectos, CC0.

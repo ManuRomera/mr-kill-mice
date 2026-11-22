@@ -6739,7 +6739,7 @@
       },
       "flags": {},
       "text": {
-       "content": "<div class=\"mrkm-diario\"><p class=\"mrkm-kicker\">00 · Cómo se juega en Foundry</p>\n<p>Todo está en el grupo <strong>Kill Mice</strong> de la barra de herramientas de la izquierda (icono de katana) y en el <strong>Panel del DJ</strong>:</p>\n<ul><li><strong>Los vengadores.</strong> Elige qué jugador lleva cada ratón: recibe la ficha y su dosier se le abre en pantalla. Rosa Muk es la reserva.</li>\n<li><strong>La pelea.</strong> Despliega los Masillas del acto (3 o 2 por jugador), repártelos entre los ratones y avanza las cuatro secuencias. La Tigresa y El Sapo se curan solos al empezar cada una.</li>\n<li><strong>Atacar.</strong> Cada jugador tiene el botón <em>Atacar (Kill Mice)</em>: elige arma y objetivo (Masillas o un Enemigo con Nombre marcado con la diana), marca sus técnicas y tira. El dado explota solo, los Masillas caen solos y el daño se aplica con su armadura.</li>\n<li><strong>La Turba.</strong> En su hueco, pulsa <em>Turno de la Turba</em>: cada ratón acosado recibe su tarjeta con <em>Esquiva acrobática</em> o <em>Encajar el golpe</em>.</li>\n<li><strong>La Lista.</strong> Se ve en el HUD de cada jugador. Al tachar un nombre, el módulo aplica el Respiro de sangre, la Inercia y, a quien dio el último golpe, la Moneda de Fortuna.</li></ul>\n<p><strong>Compatibilidad.</strong> El ataque de Kill Mice escribe su propia tarjeta en el chat, así que no se mezcla con la automatización de daño de <em>MR- Mausritter en español</em> ni con <em>Mausritter Combat Carousel</em>: las tiradas normales de la hoja siguen funcionando igual con esos módulos. Si los tienes activos, usa la tirada normal para las salvaciones y el ataque de Kill Mice para el daño.</p>\n<p><strong>Integraciones.</strong> Con <em>MR- Dirección</em> activo, sus escenas, música, motivos, efectos y figuras aparecen en su barra. Con <em>MR- Pizarra</em>, el botón <em>Pizarra de las Listas</em> monta el tablero de quién va a por quién.</p></div>",
+       "content": "<div class=\"mrkm-diario\"><p class=\"mrkm-kicker\">00 · Cómo se juega en Foundry</p>\n<p>Todo está en el grupo <strong>Kill Mice</strong> de la barra de herramientas de la izquierda (icono de katana) y en el <strong>Panel del DJ</strong>:</p>\n<ul><li><strong>Los vengadores.</strong> Elige qué jugador lleva cada ratón: recibe la ficha y su dosier se le abre en pantalla. Rosa Muk es la reserva.</li>\n<li><strong>La pelea.</strong> Despliega los Masillas del acto (3 o 2 por jugador), repártelos entre los ratones y avanza las cuatro secuencias. La Tigresa y El Sapo se curan solos al empezar cada una.</li>\n<li><strong>Atacar.</strong> Cada jugador tiene el botón <em>Atacar (Kill Mice)</em>: elige arma y objetivo (Masillas o un Enemigo con Nombre marcado con la diana), marca sus técnicas y tira. El dado explota solo, los Masillas caen solos y el daño se aplica con su armadura.</li>\n<li><strong>La Turba.</strong> En su hueco, pulsa <em>Turno de la Turba</em>: cada ratón acosado recibe su tarjeta con <em>Esquiva acrobática</em> o <em>Encajar el golpe</em>.</li>\n<li><strong>La Lista.</strong> Se ve en el HUD de cada jugador. Al tachar un nombre, el módulo aplica el Respiro de sangre, la Inercia y, a quien dio el último golpe, la Moneda de Fortuna.</li></ul>\n<p><strong>Compatibilidad.</strong> El ataque de Kill Mice escribe su propia tarjeta en el chat, así que no se mezcla con la automatización de daño de <em>MR- Mausritter en español</em> ni con <em>Mausritter Combat Carousel</em>: las tiradas normales de la hoja siguen funcionando igual con esos módulos. Si los tienes activos, usa la tirada normal para las salvaciones y el ataque de Kill Mice para el daño.</p>\n<p><strong>Banda sonora.</strong> Música de Kevin MacLeod (incompetech.com), con licencia CC BY 4.0: «RetroFuture Dirty», «Ishikari Lore», «Mountain Emperor», «Big Mojo», «Ujangong Mix», «Surf Inspector», «Robo-Western», «Pale Rider», «Senbazuru», «Asian Drums», «Smoking Gun», «Finding Movement», «Neo Western» y «Anamalie». Efectos y ambientes de Freesound.org, de dominio público (CC0). Créditos completos en el NOTICE del módulo.</p>\n<p><strong>Integraciones.</strong> Con <em>MR- Dirección</em> activo, sus escenas, música, motivos, efectos y figuras aparecen en su barra. Con <em>MR- Pizarra</em>, el botón <em>Pizarra de las Listas</em> monta el tablero de quién va a por quién.</p></div>",
        "format": 1
       }
      },
@@ -9565,7 +9565,7 @@
      {
       "_id": "IS3W1o066r4ZJXsS",
       "name": "Kill Mice (tema)",
-      "description": "",
+      "description": "«RetroFuture Dirty» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/music/tema.ogg",
       "channel": "music",
       "playing": false,
@@ -9583,7 +9583,7 @@
      {
       "_id": "vCdckJSnWV4Y0H20",
       "name": "El banquete",
-      "description": "",
+      "description": "«Ishikari Lore» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/music/banquete.ogg",
       "channel": "music",
       "playing": false,
@@ -9601,7 +9601,7 @@
      {
       "_id": "OvfsRt5T098Ojc5Z",
       "name": "Pelea I",
-      "description": "",
+      "description": "«Mountain Emperor» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/music/pelea1.ogg",
       "channel": "music",
       "playing": false,
@@ -9619,7 +9619,7 @@
      {
       "_id": "AYgrO7FzjsYHGuKs",
       "name": "Huida del altar",
-      "description": "",
+      "description": "«Robo-Western» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/music/huida.ogg",
       "channel": "music",
       "playing": false,
@@ -9637,7 +9637,7 @@
      {
       "_id": "uNeIglNrA9xAt3lq",
       "name": "La Casa de las Hojas Azules",
-      "description": "",
+      "description": "«Surf Inspector» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/music/casa.ogg",
       "channel": "music",
       "playing": false,
@@ -9655,7 +9655,7 @@
      {
       "_id": "dJjfK4gF9p79RIxA",
       "name": "Pelea II",
-      "description": "",
+      "description": "«Big Mojo» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/music/pelea2.ogg",
       "channel": "music",
       "playing": false,
@@ -9673,7 +9673,7 @@
      {
       "_id": "N673da4aACI37yQm",
       "name": "Siluetas",
-      "description": "",
+      "description": "«Ujangong Mix» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/music/siluetas.ogg",
       "channel": "music",
       "playing": false,
@@ -9691,7 +9691,7 @@
      {
       "_id": "FGheFPG59BtwSJwD",
       "name": "El último tachón",
-      "description": "",
+      "description": "«Pale Rider» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/music/epilogo.ogg",
       "channel": "music",
       "playing": false,
@@ -9732,7 +9732,7 @@
      {
       "_id": "qRlbhRXZHciUFmhK",
       "name": "Tensión",
-      "description": "",
+      "description": "«Asian Drums» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/moods/tension.ogg",
       "channel": "music",
       "playing": false,
@@ -9750,7 +9750,7 @@
      {
       "_id": "1ge7XOVTAvZ5PM5X",
       "name": "Venganza",
-      "description": "",
+      "description": "«Smoking Gun» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/moods/venganza.ogg",
       "channel": "music",
       "playing": false,
@@ -9768,7 +9768,7 @@
      {
       "_id": "MjPKCjEEKJXFOwHD",
       "name": "Cámara lenta",
-      "description": "",
+      "description": "«Finding Movement» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/moods/ralenti.ogg",
       "channel": "music",
       "playing": false,
@@ -9786,7 +9786,7 @@
      {
       "_id": "UGyKcaR5vYa9rdfo",
       "name": "Triunfo",
-      "description": "",
+      "description": "«Neo Western» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/moods/triunfo.ogg",
       "channel": "music",
       "playing": false,
@@ -9804,7 +9804,7 @@
      {
       "_id": "X1SBrRAG8SKKrDIy",
       "name": "Derrota",
-      "description": "",
+      "description": "«Anamalie» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/moods/derrota.ogg",
       "channel": "music",
       "playing": false,
@@ -9822,7 +9822,7 @@
      {
       "_id": "fSCMcjrndir2F2j3",
       "name": "Calma",
-      "description": "",
+      "description": "«Senbazuru» de Kevin MacLeod (incompetech.com), CC BY 4.0",
       "path": "modules/mr-kill-mice/assets/audio/moods/calma.ogg",
       "channel": "music",
       "playing": false,
@@ -9863,7 +9863,7 @@
      {
       "_id": "echKyp5maHqZjYtE",
       "name": "Jardín y estanque",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/ambient/jardin.ogg",
       "channel": "environment",
       "playing": false,
@@ -9881,7 +9881,7 @@
      {
       "_id": "lwev6WavCsHkgOGI",
       "name": "Neón y lluvia",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/ambient/neon.ogg",
       "channel": "environment",
       "playing": false,
@@ -9899,7 +9899,7 @@
      {
       "_id": "Cg1aTIyIUjY2e8rB",
       "name": "Santuario y canal",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/ambient/casa.ogg",
       "channel": "environment",
       "playing": false,
@@ -9940,7 +9940,7 @@
      {
       "_id": "Nbk8sn6K9CItfufE",
       "name": "Disparo",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/disparo.ogg",
       "channel": "interface",
       "playing": false,
@@ -9958,7 +9958,7 @@
      {
       "_id": "eti2WCPqP44mRjRl",
       "name": "Katana",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/katana.ogg",
       "channel": "interface",
       "playing": false,
@@ -9976,7 +9976,7 @@
      {
       "_id": "LFIyeEhP1jwhCFZ0",
       "name": "Ráfaga",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/rafaga.ogg",
       "channel": "interface",
       "playing": false,
@@ -9994,7 +9994,7 @@
      {
       "_id": "zA4fKbr1zTTqx1ov",
       "name": "¡KA-CHINK!",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/kachink.ogg",
       "channel": "interface",
       "playing": false,
@@ -10012,7 +10012,7 @@
      {
       "_id": "RcV2HTtTAyasWfBk",
       "name": "Petardo",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/petardo.ogg",
       "channel": "interface",
       "playing": false,
@@ -10030,7 +10030,7 @@
      {
       "_id": "wfhczcl6DpCM8pBr",
       "name": "Gong",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/gong.ogg",
       "channel": "interface",
       "playing": false,
@@ -10048,7 +10048,7 @@
      {
       "_id": "ahFkMIhk49wBrYcH",
       "name": "Sirena Roja",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/sirena.ogg",
       "channel": "interface",
       "playing": false,
@@ -10066,7 +10066,7 @@
      {
       "_id": "8NAiRrFRmWCTe0q2",
       "name": "Tachón",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/tachon.ogg",
       "channel": "interface",
       "playing": false,
@@ -10084,7 +10084,7 @@
      {
       "_id": "XK5J3B1BEf09NFav",
       "name": "Bramido",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/bramido.ogg",
       "channel": "interface",
       "playing": false,
@@ -10102,7 +10102,7 @@
      {
       "_id": "qg48sNaoagCcY4H5",
       "name": "Cristal",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/cristal.ogg",
       "channel": "interface",
       "playing": false,
@@ -10120,7 +10120,7 @@
      {
       "_id": "S18jsQew1iXhtENa",
       "name": "Cadena",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/cadena.ogg",
       "channel": "interface",
       "playing": false,
@@ -10138,7 +10138,7 @@
      {
       "_id": "63GnWzQypfRSWK0l",
       "name": "Apagón azul",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/apagon.ogg",
       "channel": "interface",
       "playing": false,
@@ -10156,7 +10156,7 @@
      {
       "_id": "oKVpMXsPuEEh9Qa5",
       "name": "Sirenas de la Guardia",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/sirenas-guardia.ogg",
       "channel": "interface",
       "playing": false,
@@ -10174,7 +10174,7 @@
      {
       "_id": "R45HG00egrpRYl8j",
       "name": "Brindis",
-      "description": "",
+      "description": "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice",
       "path": "modules/mr-kill-mice/assets/audio/sfx/discurso.ogg",
       "channel": "interface",
       "playing": false,
@@ -10366,7 +10366,7 @@
   "sort": 0,
   "flags": {
    "mr-kill-mice": {
-    "version": "1.0.0"
+    "version": "1.1.0"
    }
   }
  }

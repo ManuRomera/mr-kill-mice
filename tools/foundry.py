@@ -298,6 +298,7 @@ USO_FOUNDRY = """<p class="mrkm-kicker">00 · Cómo se juega en Foundry</p>
 <li><strong>La Turba.</strong> En su hueco, pulsa <em>Turno de la Turba</em>: cada ratón acosado recibe su tarjeta con <em>Esquiva acrobática</em> o <em>Encajar el golpe</em>.</li>
 <li><strong>La Lista.</strong> Se ve en el HUD de cada jugador. Al tachar un nombre, el módulo aplica el Respiro de sangre, la Inercia y, a quien dio el último golpe, la Moneda de Fortuna.</li></ul>
 <p><strong>Compatibilidad.</strong> El ataque de Kill Mice escribe su propia tarjeta en el chat, así que no se mezcla con la automatización de daño de <em>MR- Mausritter en español</em> ni con <em>Mausritter Combat Carousel</em>: las tiradas normales de la hoja siguen funcionando igual con esos módulos. Si los tienes activos, usa la tirada normal para las salvaciones y el ataque de Kill Mice para el daño.</p>
+<p><strong>Banda sonora.</strong> Música de Kevin MacLeod (incompetech.com), con licencia CC BY 4.0: «RetroFuture Dirty», «Ishikari Lore», «Mountain Emperor», «Big Mojo», «Ujangong Mix», «Surf Inspector», «Robo-Western», «Pale Rider», «Senbazuru», «Asian Drums», «Smoking Gun», «Finding Movement», «Neo Western» y «Anamalie». Efectos y ambientes de Freesound.org, de dominio público (CC0). Créditos completos en el NOTICE del módulo.</p>
 <p><strong>Integraciones.</strong> Con <em>MR- Dirección</em> activo, sus escenas, música, motivos, efectos y figuras aparecen en su barra. Con <em>MR- Pizarra</em>, el botón <em>Pizarra de las Listas</em> monta el tablero de quién va a por quién.</p>"""
 
 guia_paginas = [pagina("Kill Mice", "La Lista del Sobre Rojo.", 0, "image", ruta("assets/cover.webp")), pagina("Cómo se juega en Foundry", f'<div class="mrkm-diario">{USO_FOUNDRY}</div>', 1)]
@@ -354,8 +355,17 @@ EFECTOS = [("disparo", "Disparo", "gun"), ("katana", "Katana", "khanda"), ("rafa
            ("sirenas-guardia", "Sirenas de la Guardia", "tower-broadcast"), ("discurso", "Brindis", "champagne-glasses")]
 
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from banda import MUSICA as PISTAS  # noqa: E402
+
+
+def credito(carpeta, slug):
+    pista = PISTAS.get(f"{carpeta}/{slug}", (None,))[0]
+    return f"«{pista}» de Kevin MacLeod (incompetech.com), CC BY 4.0" if pista else "Grabaciones de Freesound.org (CC0), mezcla de MR- Kill Mice"
+
+
 def sonido(carpeta, slug, nombre, canal, repetir, vol):
-    return dict(_id=uid(f"sonido:{carpeta}:{slug}"), name=nombre, description="", path=ruta(f"assets/audio/{carpeta}/{slug}.ogg"), channel=canal, playing=False, pausedTime=None,
+    return dict(_id=uid(f"sonido:{carpeta}:{slug}"), name=nombre, description=credito(carpeta, slug), path=ruta(f"assets/audio/{carpeta}/{slug}.ogg"), channel=canal, playing=False, pausedTime=None,
                 repeat=repetir, volume=vol, fade=2000 if repetir else None, sort=0, flags={ID: dict(slug=f"{carpeta}-{slug}")})
 
 
