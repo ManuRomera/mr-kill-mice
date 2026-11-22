@@ -213,3 +213,78 @@ body.mrkm-alto-contraste { --rm-papel: #fffdf6; --rm-papel2: #fff4cf; --rm-gris:
 .mrkm-diario .mrkm-caja ul { margin: .2rem 0; }
 .mrkm-dosier .mrkm-lista { margin: .4rem 0; }
 .mrkm-dosier .mrkm-sello { color: var(--rm-rojo); border-color: var(--rm-rojo); }
+
+/* ---------------- Piel Kill Mice de las tiradas nativas (tarjetas del chat y diálogos de la ficha) ----------------
+   Solo aspecto. El prefijo largo gana a los temas oscuro/contraste de MR- Mausritter en español sin tocar sus datos ni botones. */
+:root body.mrkm-piel-on .mrkm-piel.mrkm-piel {
+  & .mausritter .rollcontainer {
+    background: linear-gradient(118deg, transparent 0 78%, var(--rm-amarillo) 78% 92%, transparent 92%) var(--rm-papel) !important;
+    color: var(--rm-tinta) !important; border: 3px solid var(--rm-tinta) !important; border-radius: 0 !important;
+    box-shadow: 5px 5px 0 var(--rm-rojo) !important; padding: 0 .55rem .45rem !important; overflow: hidden;
+    font-family: "RM Crimson", serif !important; font-size: calc(1em * var(--rm-escala));
+  }
+  & .mausritter :is(.rollh1, .rollweaponh1) {
+    background: linear-gradient(104deg, var(--rm-tinta) 0 72%, var(--rm-rojo) 72% 76%, var(--rm-tinta) 76% 80%, var(--rm-amarillo) 80%) !important;
+    color: var(--rm-amarillo) !important; border: 0 !important; border-bottom: 4px solid var(--rm-amarillo) !important;
+    font-family: "RM Anton", sans-serif !important; font-size: 1.65rem !important; line-height: 1.15; text-transform: uppercase;
+    letter-spacing: .03em; padding: .3rem 2.2rem .3rem .6rem !important; margin: 0 -.55rem !important; width: auto !important; height: auto !important;
+    text-shadow: 2px 2px 0 var(--rm-sangre);
+  }
+  & .mausritter .flexrow:has(> .rollweaponh1) { height: auto !important; align-items: stretch; margin: 0 -.55rem; }
+  & .mausritter .flexrow > .rollweaponh1 { margin: 0 !important; }
+  & .mausritter .roll-image { flex: 0 0 58px; width: 58px; height: 58px; object-fit: contain; border: 0 !important; border-left: 3px solid var(--rm-tinta) !important;
+    background: var(--rm-amarillo); margin: 0 !important; }
+  & .mausritter .rollh2 { font-family: "RM Bebas", sans-serif !important; font-size: 2.1rem !important; letter-spacing: .06em; text-transform: uppercase;
+    color: var(--rm-sangre) !important; background: none !important; margin: .35rem 0 .1rem !important; }
+  & .mausritter .roll-result {
+    font-family: "RM Anton", sans-serif !important; font-size: 2.6rem !important; line-height: 1.1; color: var(--rm-tinta) !important;
+    background: var(--rm-amarillo) !important; border: 3px solid var(--rm-tinta) !important; border-radius: 0 !important;
+    box-shadow: 4px 4px 0 var(--rm-tinta) !important; transform: rotate(-2deg); padding: .1rem .4rem !important;
+  }
+  & .mausritter .roll-target { background: none !important; color: var(--rm-tinta) !important; font-family: "RM Bebas", sans-serif !important;
+    font-size: 1.35rem !important; letter-spacing: .05em; text-transform: uppercase; gap: .8rem !important; padding: .7rem .3rem .4rem !important; }
+  & .mausritter .roll-targetbox { background: var(--rm-tinta) !important; color: var(--rm-amarillo) !important; border: 0 !important; border-radius: 0 !important;
+    font-family: "RM Anton", sans-serif !important; font-size: 1.15rem !important; }
+  & .mausritter :is(.rollmods, .rollmods .valuetext) { font-family: "RM Maquina", monospace !important; color: var(--rm-gris) !important; font-size: .8rem !important;
+    margin-top: 0 !important; letter-spacing: .02em; }
+  & .mausritter .roll-damage { font-family: "RM Bebas", sans-serif !important; font-size: 1.9rem !important; letter-spacing: .07em; text-transform: uppercase;
+    color: var(--rm-sangre) !important; margin-top: .5rem !important; }
+  & .mausritter .roll-damagebox {
+    background: var(--rm-rojo) !important; color: var(--rm-papel) !important; border: 0 !important; border-radius: 0 !important;
+    font-family: "RM Anton", sans-serif !important; font-size: 2.5rem !important; line-height: 1.15; padding: .25rem 1.4rem !important;
+    transform: rotate(1.5deg); text-shadow: 2px 2px 0 var(--rm-tinta); width: max-content; max-width: 100%;
+    clip-path: polygon(4% 8%, 18% 0, 34% 9%, 52% 1%, 70% 8%, 88% 0, 100% 14%, 96% 38%, 100% 62%, 95% 86%, 82% 100%, 62% 92%, 44% 100%, 26% 93%, 9% 100%, 0 82%, 5% 58%, 0 34%);
+  }
+  & .mausritter .description { background: none !important; border-color: var(--rm-tinta) !important; }
+  & .mausritter .description .header { font-family: "RM Bebas", sans-serif !important; letter-spacing: .05em; color: var(--rm-tinta) !important;
+    background: none !important; border-bottom: 3px solid var(--rm-amarillo) !important; }
+  & .mausritter .description .body { color: var(--rm-tinta) !important; background: none !important; }
+  & .mausritter .rollcontainer button { font-family: "RM Bebas", sans-serif !important; font-size: 1.1rem !important; letter-spacing: .05em;
+    background: var(--rm-amarillo) !important; color: var(--rm-tinta) !important; border: 2px solid var(--rm-tinta) !important; border-radius: 0 !important;
+    box-shadow: 2px 2px 0 var(--rm-tinta) !important; }
+  & .mausritter .rollcontainer button:hover:not(:disabled) { background: var(--rm-tinta) !important; color: var(--rm-amarillo) !important; }
+
+  /* Diálogos de tirada (ventaja, mejorado/perjudicado, característica, poder del hechizo) */
+  &.mrkm-piel-dialogo { border: 3px solid var(--rm-tinta); border-radius: 0; box-shadow: 6px 6px 0 var(--rm-rojo); height: auto !important; min-width: 340px; }
+  &.mrkm-piel-dialogo .window-header { background: var(--rm-tinta) !important; color: var(--rm-amarillo) !important; border-bottom: 4px solid var(--rm-amarillo) !important; }
+  &.mrkm-piel-dialogo .window-header :is(.window-title, h4) { font-family: "RM Bebas", sans-serif !important; font-size: 1.3em; letter-spacing: .07em; color: var(--rm-amarillo) !important; }
+  &.mrkm-piel-dialogo .window-content {
+    background: linear-gradient(118deg, transparent 0 74%, var(--rm-amarillo) 74% 88%, var(--rm-rojo) 88% 90%, transparent 90%) var(--rm-papel) !important;
+    color: var(--rm-tinta) !important; font-size: calc(14px * var(--rm-escala));
+  }
+  &.mrkm-piel-dialogo h2 { font-family: "RM Anton", sans-serif !important; text-transform: uppercase; font-size: 1.55em !important; letter-spacing: .02em;
+    color: var(--rm-tinta) !important; border: 0 !important; border-bottom: 5px solid var(--rm-amarillo) !important; margin: .2rem 0 .7rem !important; }
+  &.mrkm-piel-dialogo :is(select, input) { font-family: "RM Bebas", sans-serif !important; font-size: 1.3em !important; letter-spacing: .04em; height: auto !important;
+    background: #fffaf0 !important; color: var(--rm-tinta) !important; border: 2px solid var(--rm-tinta) !important; border-radius: 0 !important;
+    box-shadow: 3px 3px 0 var(--rm-amarillo); padding: .15rem .4rem !important; }
+  &.mrkm-piel-dialogo :is(select, input):focus-visible { outline: 3px solid var(--rm-rojo); outline-offset: 1px; }
+  &.mrkm-piel-dialogo .dialog-buttons { gap: .5rem; }
+  &.mrkm-piel-dialogo .dialog-buttons button {
+    font-family: "RM Bebas", sans-serif !important; font-size: 1.35em !important; letter-spacing: .06em; line-height: 1.7;
+    background: var(--rm-amarillo) !important; color: var(--rm-tinta) !important; border: 2px solid var(--rm-tinta) !important; border-radius: 0 !important;
+    box-shadow: 3px 3px 0 var(--rm-tinta) !important;
+  }
+  &.mrkm-piel-dialogo .dialog-buttons button:first-child { background: var(--rm-rojo) !important; color: var(--rm-papel) !important; }
+  &.mrkm-piel-dialogo .dialog-buttons button:hover { background: var(--rm-tinta) !important; color: var(--rm-amarillo) !important; }
+  &.mrkm-piel-dialogo .dialog-buttons button:focus-visible { outline: 3px solid var(--rm-azul); outline-offset: 2px; }
+}

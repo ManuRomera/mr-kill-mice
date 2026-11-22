@@ -7,6 +7,7 @@
   "Cancelar": "Cancelar",
   "Guardar": "Guardar",
   "Cerrar": "Cerrar",
+  "DescripcionMundo": "<p><strong>La venganza es un plato que se sirve con queso frío.</strong></p><p>Una boda en el Jardín de los Mil Farolillos. Seis ratones que la Víbora Mortal dio por muertos. Cinco nombres en cada lista. El último siempre es el mismo.</p><p><em>Aventura en dos volúmenes para Mausritter.</em></p>",
   "Ajustes": {
    "mostrarHud": {
     "Name": "Mostrar la Lista y la pelea",
@@ -31,6 +32,10 @@
    "altoContraste": {
     "Name": "Alto contraste",
     "Hint": "Colores más contrastados en los paneles y el HUD del módulo."
+   },
+   "pielTiradas": {
+    "Name": "Tiradas a lo Kill Mice",
+    "Hint": "Las tarjetas de tirada del chat y los diálogos de tirada de la ficha de Mausritter con la estética de la aventura. Solo cambia el aspecto, en este navegador."
    },
    "escalaVentanas": {
     "Name": "Tamaño de las ventanas (%)",

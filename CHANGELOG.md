@@ -1,5 +1,10 @@
 # Cambios
 
+## 1.1.0
+
+- **Portada del mundo.** Al entrar como DJ, si el mundo no tiene imagen de fondo ni descripción, se ponen las de Kill Mice: un cartel nuevo para la pantalla de entrada y la tarjeta del mundo. Nunca pisa lo que ya tengas.
+- **Tiradas a lo Kill Mice.** Las tarjetas de tirada del chat (característica, arma, hechizo) y los diálogos de tirada de la ficha de Mausritter llevan la estética de la aventura: cabecera negra y amarilla, resultado en grande, daño en mancha roja. Solo cambia el aspecto: los botones de Combat Carousel y la traducción de MR- Mausritter en español siguen igual, también con su tema oscuro. Se apaga en los ajustes («Tiradas a lo Kill Mice»).
+
 ## 1.0.1
 
 - **Escenas vacías:** las once ilustraciones de escena ya no llevan personajes; son el lugar preparado o el rastro de lo que pasó, para colocar encima las figuras de cuerpo entero.

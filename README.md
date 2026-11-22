@@ -54,6 +54,11 @@ El módulo añade un grupo **Kill Mice** en la barra de herramientas de la escen
 
 <p align="center"><img src="docs/img/captura-panel.webp" alt="Panel del Narrador y HUD de la Lista de Muerte" width="100%"></p>
 
+### Portada y tiradas a lo Kill Mice
+
+- El mundo estrena **portada**: si no tiene imagen de fondo ni descripción, el módulo pone las de la aventura en la pantalla de entrada.
+- Las **tarjetas de tirada** del chat y los **diálogos de tirada de la ficha** de Mausritter se visten de Kill Mice: cabecera negra y amarilla, resultado en grande y el daño en una mancha roja. Se apaga en los ajustes.
+
 ### Convive con tus otros módulos de Mausritter
 
 Las reglas de Kill Mice van en tarjetas y diálogos propios. No envuelven ninguna función del sistema ni tocan las tiradas nativas. Con **MR- Mausritter en español** y **Mausritter Combat Carousel** activos a la vez, cada uno hace lo suyo y nadie aplica el daño dos veces. El bloqueo de seis casillas solo afecta a los vengadores de esta aventura.

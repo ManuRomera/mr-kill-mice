@@ -187,6 +187,15 @@ def escenas():
             print("hecho", m)
     if (RAW / "cover.png").exists():
         guarda(marca.esquina(Image.open(RAW / "cover.png").convert("RGB")), A / "cover.webp", 88)
+    if (RAW / "portada-mundo.png").exists():
+        guarda(portada_mundo(), A / "portada-mundo.webp", 86)
+        print("hecho portada-mundo")
+
+
+def portada_mundo(w=1920, h=1080):
+    """Fondo del mundo (pantalla de entrada y tarjeta del mundo en Foundry). Sin rótulos: Foundry ya pone el nombre
+    encima y tapa el centro con sus paneles."""
+    return marca.esquina(ImageOps.fit(Image.open(RAW / "portada-mundo.png").convert("RGB"), (w, h), Image.LANCZOS))
 
 
 # ------------------------------------------------------------------ iconos (hojas de 3×3)

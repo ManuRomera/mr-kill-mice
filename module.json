@@ -1,7 +1,7 @@
 {
   "id": "mr-kill-mice",
   "title": "MR- Kill Mice",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "La Lista del Sobre Rojo. Venganza ratonil de una sesión para Mausritter: seis ratones con cinco nombres cada uno, una boda que salta por los aires y un club nocturno lleno de enmascarados. Aventura completa con reglas propias en Foundry (Masillas, Turba y Esquiva acrobática, dados explosivos, Lista de Muerte con tachones, secuencias y el daño escalable de Bill), arte propio, música e integración con MR- Dirección y MR- Pizarra. Convive con MR- Mausritter en español y Mausritter Combat Carousel.",
   "authors": [
     {
@@ -67,7 +67,7 @@
   "socket": true,
   "url": "https://github.com/ManuRomera/mr-kill-mice",
   "manifest": "https://github.com/ManuRomera/mr-kill-mice/releases/latest/download/module.json",
-  "download": "https://github.com/ManuRomera/mr-kill-mice/releases/download/v1.0.1/mr-kill-mice.zip",
+  "download": "https://github.com/ManuRomera/mr-kill-mice/releases/download/v1.1.0/mr-kill-mice.zip",
   "readme": "https://github.com/ManuRomera/mr-kill-mice#readme",
   "bugs": "https://github.com/ManuRomera/mr-kill-mice/issues",
   "license": "https://github.com/ManuRomera/mr-kill-mice/blob/main/LICENSE"
