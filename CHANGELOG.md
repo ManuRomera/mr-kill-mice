@@ -1,5 +1,9 @@
 # Cambios
 
+## 1.2.1
+
+- **Portada corregida.** La protagonista de la portada tenía tres piernas; ahora tiene dos. Se ha rehecho la portada del módulo, el banner del README y el libro en PDF.
+
 ## 1.2.0
 
 - **Fichas a lo Kill Mice.** Las fichas de personaje y criatura llevan la misma estética que las tarjetas de tirada: cabeceras negras y amarillas, cifras en Anton, retrato con sombra roja y pestañas de barra. Con el modo oscuro de MR- Mausritter en español, la ficha, las tarjetas del chat y los diálogos de tirada pasan a su versión oscura.
