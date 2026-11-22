@@ -1,5 +1,9 @@
 # Cambios
 
+## 1.2.2
+
+- **Cola en su sitio.** En la portada, la cola de la protagonista nacía por delante del muslo; ahora sale del centro de la espalda baja. Rehechos la portada del módulo, el banner y el libro en PDF.
+
 ## 1.2.1
 
 - **Portada corregida.** La protagonista de la portada tenía tres piernas; ahora tiene dos. Se ha rehecho la portada del módulo, el banner del README y el libro en PDF.
