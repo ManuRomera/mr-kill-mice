@@ -57,7 +57,8 @@ El módulo añade un grupo **Kill Mice** en la barra de herramientas de la escen
 ### Portada y tiradas a lo Kill Mice
 
 - El mundo estrena **portada**: si no tiene imagen de fondo ni descripción, el módulo pone las de la aventura en la pantalla de entrada.
-- Las **tarjetas de tirada** del chat y los **diálogos de tirada de la ficha** de Mausritter se visten de Kill Mice: cabecera negra y amarilla, resultado en grande y el daño en una mancha roja. Se apaga en los ajustes.
+- Las **fichas**, las **tarjetas de tirada** del chat y los **diálogos de tirada** de Mausritter se visten de Kill Mice: cabeceras negras y amarillas, resultado en grande y el daño en una mancha roja. Cambian a oscuro con el tema de MR- Mausritter en español y se apagan en los ajustes.
+- El cuadro de la ficha muestra solo el lema y la Lista de Muerte, que se tacha en vivo. Todo lo demás está en Notas.
 
 ### Convive con tus otros módulos de Mausritter
 

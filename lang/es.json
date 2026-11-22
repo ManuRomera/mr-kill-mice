@@ -34,8 +34,8 @@
     "Hint": "Colores más contrastados en los paneles y el HUD del módulo."
    },
    "pielTiradas": {
-    "Name": "Tiradas a lo Kill Mice",
-    "Hint": "Las tarjetas de tirada del chat y los diálogos de tirada de la ficha de Mausritter con la estética de la aventura. Solo cambia el aspecto, en este navegador."
+    "Name": "Fichas y tiradas a lo Kill Mice",
+    "Hint": "Las fichas de personaje y criatura, las tarjetas de tirada del chat y los diálogos de tirada de Mausritter con la estética de la aventura, en claro u oscuro según el tema de MR- Mausritter en español. Solo cambia el aspecto, en este navegador."
    },
    "escalaVentanas": {
     "Name": "Tamaño de las ventanas (%)",

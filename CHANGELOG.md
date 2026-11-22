@@ -1,5 +1,10 @@
 # Cambios
 
+## 1.2.0
+
+- **Fichas a lo Kill Mice.** Las fichas de personaje y criatura llevan la misma estética que las tarjetas de tirada: cabeceras negras y amarillas, cifras en Anton, retrato con sombra roja y pestañas de barra. Con el modo oscuro de MR- Mausritter en español, la ficha, las tarjetas del chat y los diálogos de tirada pasan a su versión oscura.
+- **El cuadro de la ficha, solo lo esencial.** Lleva el lema y la Lista de Muerte, que se tacha en vivo como el HUD. La historia, el aspecto, las técnicas y la Lista con su regla van a la pestaña Notas. Los PNJ tienen ya sus notas visibles: la ficha de criatura no mostraba su texto.
+
 ## 1.1.0
 
 - **Banda sonora nueva.** La música sintética deja paso a una banda sonora de verdad, toda de Kevin MacLeod (CC BY 4.0). Taiko y koto para el Jardín, guitarra western para la venganza, funk-rock de los setenta para el tema principal y surf para la Casa de las Hojas Azules. Los 14 efectos y los 3 ambientes son grabaciones reales de Freesound (CC0). Antes faltaban once efectos en la descarga. Todo pasa por el mismo master de cinta, los efectos comparten sala y los bucles empalman a compás, sin hueco. Créditos en NOTICE.md, en las listas de reproducción y en «Cómo se juega en Foundry».

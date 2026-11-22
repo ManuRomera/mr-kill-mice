@@ -64,9 +64,13 @@ def sheet(x=0, y=0):
     return dict(active=False, currentX=x, currentY=y, initialX=x, initialY=y, xOffset=0, yOffset=0, rotation=0, curWidth=1, curHeight=1, zIndex=1000 + x + y)
 
 
-def lista_html(p):
+def lista_ol(p):
     filas = "".join(f'<li data-n="{i + 1}" data-slug="{s}">{esc(t)}</li>' for i, (s, t) in enumerate(zip(p["lista"], D.lista_txt(p))))
-    return f'<ol class="mrkm-lista">{filas}</ol><p>Tacha un nombre cuando caiga y hayas participado: Respiro de sangre, Inercia de venganza y, si diste el último golpe a un nombre compartido, una Moneda de Fortuna.</p>'
+    return f'<ol class="mrkm-lista">{filas}</ol>'
+
+
+def lista_html(p):
+    return f'{lista_ol(p)}<p>Tacha un nombre cuando caiga y hayas participado: Respiro de sangre, Inercia de venganza y, si diste el último golpe a un nombre compartido, una Moneda de Fortuna.</p>'
 
 
 def item_doc(slug, x=0, y=0, suf="", folder=None, dueno=None):
@@ -132,10 +136,12 @@ def ficha_pj(p, tipo="pj"):
             sh = it["system"]["sheet"]; sh["currentY"] = sh["initialY"] = -85
     inv += [bloqueo(":" + p["slug"])]
     tec = "".join(f"<li><strong>{esc(n)}.</strong> {esc(t)}</li>" for n, t in p["tec"])
-    bio = (f"<p><em>{esc(p['arq'])} · {esc(p['lema'])}</em></p><p>{esc(p['aspecto'])}</p><h3>Técnicas</h3><ul>{tec}</ul>"
-           + f"<h3>Mi Lista de Muerte</h3>{lista_html(p)}")
+    # el cuadro de la ficha solo lleva lo esencial (lema y Lista, que el módulo tacha en vivo); el resto va a Notas
+    bio = f'<p class="mrkm-lema"><em>{esc(p["lema"])}</em></p>{lista_ol(p)}'
+    notas = (f"<p><em>{esc(p['arq'])} · {esc(p['lema'])}</em></p><p>{esc(p['aspecto'])}</p><h3>Técnicas</h3><ul>{tec}</ul>"
+             + f"<h3>Mi Lista de Muerte</h3>{lista_html(p)}")
     return dict(_id=uid("actor:" + p["slug"]), name=p["n"], type="character", img=img(f"assets/actors/portraits/{p['slug']}.webp"),
-                system=dict(health=dict(value=p["pg"], min=0, max=p["pg"]), hits=dict(value=2, max=2), armor=0, biography=bio, notes="",
+                system=dict(health=dict(value=p["pg"], min=0, max=p["pg"]), hits=dict(value=2, max=2), armor=0, biography=bio, notes=notas,
                             description=dict(background=p["arq"], birthsign="", coat="", look=p["aspecto"]), level=dict(value=1, xp=0), pips=dict(value=p["pepitas"]),
                             grit=dict(value=0, ignored=""), stats=stats(p["fue"], p["des"], p["vol"]), other=dict(grit=dict(value=0))),
                 prototypeToken=token(p["slug"], p["n"], 1, 1, True, True), items=inv, effects=[], folder=FOLD[("Actor", "Los vengadores")], sort=D.TODOS.index(p),
@@ -161,7 +167,7 @@ def ficha_pnj(n):
     bio = (f"<p><em>{esc(n['apodo'])}</em></p><p>{esc(n['d'])}</p><ul>{esp}</ul><p><strong>Voz:</strong> {esc(n['voz'])} <em>{esc(n['frase'])}</em></p>"
            + (f"<p><strong>En la Lista de:</strong> {esc(', '.join(en))}.</p>" if en else ""))
     return dict(_id=uid("actor:" + n["slug"]), name=n["n"], type="creature", img=img(f"assets/actors/portraits/{n['slug']}.webp"),
-                system=dict(health=dict(value=n["pg"], min=0, max=n["pg"]), hits=dict(value=2, max=2), armor=n["arm"], biography=bio, notes="",
+                system=dict(health=dict(value=n["pg"], min=0, max=n["pg"]), hits=dict(value=2, max=2), armor=n["arm"], biography=bio, notes=bio,
                             description=dict(disposition=""), stats=stats(n["fue"], n["des"], n["vol"])),
                 prototypeToken=token(n["slug"], n["n"], 0 if n["tipo"] == "aliado" else -1, n.get("tam", 1)), items=atq, effects=[],
                 folder=FOLD[("Actor", carpeta_pnj(n))], sort=0, ownership=dict(default=0),

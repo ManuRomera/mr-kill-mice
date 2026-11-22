@@ -214,77 +214,131 @@ body.mrkm-alto-contraste { --rm-papel: #fffdf6; --rm-papel2: #fff4cf; --rm-gris:
 .mrkm-dosier .mrkm-lista { margin: .4rem 0; }
 .mrkm-dosier .mrkm-sello { color: var(--rm-rojo); border-color: var(--rm-rojo); }
 
-/* ---------------- Piel Kill Mice de las tiradas nativas (tarjetas del chat y diálogos de la ficha) ----------------
-   Solo aspecto. El prefijo largo gana a los temas oscuro/contraste de MR- Mausritter en español sin tocar sus datos ni botones. */
+/* ---------------- Piel Kill Mice de lo nativo de Mausritter: fichas, tarjetas de tirada y diálogos de tirada ----------------
+   Solo aspecto. Colores en variables: claro por defecto y oscuro cuando MR- Mausritter en español activa su tema (.mrm-dark).
+   El prefijo largo gana a los !important de sus temas oscuro y de contraste sin tocar sus datos ni sus botones. */
+.mrkm-piel {
+  --km-papel: #F6F1E3; --km-papel2: #E9E0C8; --km-campo: #fffaf0; --km-texto: #121212; --km-suave: #5f5a52; --km-borde: #121212;
+  --km-banda: #121212; --km-banda-txt: #F5C518; --km-amarillo: #F5C518; --km-rojo: #C8102E; --km-sangre: #9E0B23; --km-tinta: #121212;
+  --km-franja: #F5C518;
+}
+:root.mrm-dark .mrkm-piel {
+  --km-papel: #1c1915; --km-papel2: #2a241c; --km-campo: #141210; --km-texto: #F6F1E3; --km-suave: #cbbfa6; --km-borde: #d9c9a3;
+  --km-banda: #000; --km-sangre: #ff7a7a; --km-franja: #4a3d0c;
+}
 :root body.mrkm-piel-on .mrkm-piel.mrkm-piel {
+  /* ---- tarjetas de tirada del chat ---- */
   & .mausritter .rollcontainer {
-    background: linear-gradient(118deg, transparent 0 78%, var(--rm-amarillo) 78% 92%, transparent 92%) var(--rm-papel) !important;
-    color: var(--rm-tinta) !important; border: 3px solid var(--rm-tinta) !important; border-radius: 0 !important;
-    box-shadow: 5px 5px 0 var(--rm-rojo) !important; padding: 0 .55rem .45rem !important; overflow: hidden;
+    background: linear-gradient(118deg, transparent 0 78%, var(--km-franja) 78% 92%, transparent 92%) var(--km-papel) !important;
+    color: var(--km-texto) !important; border: 3px solid var(--km-borde) !important; border-radius: 0 !important;
+    box-shadow: 5px 5px 0 var(--km-rojo) !important; padding: 0 .55rem .45rem !important; overflow: hidden;
     font-family: "RM Crimson", serif !important; font-size: calc(1em * var(--rm-escala));
   }
   & .mausritter :is(.rollh1, .rollweaponh1) {
-    background: linear-gradient(104deg, var(--rm-tinta) 0 72%, var(--rm-rojo) 72% 76%, var(--rm-tinta) 76% 80%, var(--rm-amarillo) 80%) !important;
-    color: var(--rm-amarillo) !important; border: 0 !important; border-bottom: 4px solid var(--rm-amarillo) !important;
+    background: linear-gradient(104deg, var(--km-banda) 0 72%, var(--km-rojo) 72% 76%, var(--km-banda) 76% 80%, var(--km-amarillo) 80%) !important;
+    color: var(--km-banda-txt) !important; border: 0 !important; border-bottom: 4px solid var(--km-amarillo) !important;
     font-family: "RM Anton", sans-serif !important; font-size: 1.65rem !important; line-height: 1.15; text-transform: uppercase;
     letter-spacing: .03em; padding: .3rem 2.2rem .3rem .6rem !important; margin: 0 -.55rem !important; width: auto !important; height: auto !important;
-    text-shadow: 2px 2px 0 var(--rm-sangre);
+    text-shadow: 2px 2px 0 #9E0B23;
   }
   & .mausritter .flexrow:has(> .rollweaponh1) { height: auto !important; align-items: stretch; margin: 0 -.55rem; }
   & .mausritter .flexrow > .rollweaponh1 { margin: 0 !important; }
-  & .mausritter .roll-image { flex: 0 0 58px; width: 58px; height: 58px; object-fit: contain; border: 0 !important; border-left: 3px solid var(--rm-tinta) !important;
-    background: var(--rm-amarillo); margin: 0 !important; }
+  & .mausritter .roll-image { flex: 0 0 58px; width: 58px; height: 58px; object-fit: contain; border: 0 !important; border-left: 3px solid var(--km-borde) !important;
+    background: var(--km-amarillo) !important; margin: 0 !important; }
   & .mausritter .rollh2 { font-family: "RM Bebas", sans-serif !important; font-size: 2.1rem !important; letter-spacing: .06em; text-transform: uppercase;
-    color: var(--rm-sangre) !important; background: none !important; margin: .35rem 0 .1rem !important; }
+    color: var(--km-sangre) !important; background: none !important; margin: .35rem 0 .1rem !important; }
   & .mausritter .roll-result {
-    font-family: "RM Anton", sans-serif !important; font-size: 2.6rem !important; line-height: 1.1; color: var(--rm-tinta) !important;
-    background: var(--rm-amarillo) !important; border: 3px solid var(--rm-tinta) !important; border-radius: 0 !important;
-    box-shadow: 4px 4px 0 var(--rm-tinta) !important; transform: rotate(-2deg); padding: .1rem .4rem !important;
+    font-family: "RM Anton", sans-serif !important; font-size: 2.6rem !important; line-height: 1.1; color: var(--km-tinta) !important;
+    background: var(--km-amarillo) !important; border: 3px solid var(--km-tinta) !important; border-radius: 0 !important;
+    box-shadow: 4px 4px 0 var(--km-borde) !important; transform: rotate(-2deg); padding: .1rem .4rem !important;
   }
-  & .mausritter .roll-target { background: none !important; color: var(--rm-tinta) !important; font-family: "RM Bebas", sans-serif !important;
+  & .mausritter .roll-target { background: none !important; color: var(--km-texto) !important; font-family: "RM Bebas", sans-serif !important;
     font-size: 1.35rem !important; letter-spacing: .05em; text-transform: uppercase; gap: .8rem !important; padding: .7rem .3rem .4rem !important; }
-  & .mausritter .roll-targetbox { background: var(--rm-tinta) !important; color: var(--rm-amarillo) !important; border: 0 !important; border-radius: 0 !important;
+  & .mausritter .roll-targetbox { background: var(--km-banda) !important; color: var(--km-banda-txt) !important; border: 0 !important; border-radius: 0 !important;
     font-family: "RM Anton", sans-serif !important; font-size: 1.15rem !important; }
-  & .mausritter :is(.rollmods, .rollmods .valuetext) { font-family: "RM Maquina", monospace !important; color: var(--rm-gris) !important; font-size: .8rem !important;
+  & .mausritter :is(.rollmods, .rollmods .valuetext) { font-family: "RM Maquina", monospace !important; color: var(--km-suave) !important; font-size: .8rem !important;
     margin-top: 0 !important; letter-spacing: .02em; }
   & .mausritter .roll-damage { font-family: "RM Bebas", sans-serif !important; font-size: 1.9rem !important; letter-spacing: .07em; text-transform: uppercase;
-    color: var(--rm-sangre) !important; margin-top: .5rem !important; }
+    color: var(--km-sangre) !important; margin-top: .5rem !important; }
   & .mausritter .roll-damagebox {
-    background: var(--rm-rojo) !important; color: var(--rm-papel) !important; border: 0 !important; border-radius: 0 !important;
+    background: var(--km-rojo) !important; color: #F6F1E3 !important; border: 0 !important; border-radius: 0 !important;
     font-family: "RM Anton", sans-serif !important; font-size: 2.5rem !important; line-height: 1.15; padding: .25rem 1.4rem !important;
-    transform: rotate(1.5deg); text-shadow: 2px 2px 0 var(--rm-tinta); width: max-content; max-width: 100%;
+    transform: rotate(1.5deg); text-shadow: 2px 2px 0 #121212; width: max-content; max-width: 100%;
     clip-path: polygon(4% 8%, 18% 0, 34% 9%, 52% 1%, 70% 8%, 88% 0, 100% 14%, 96% 38%, 100% 62%, 95% 86%, 82% 100%, 62% 92%, 44% 100%, 26% 93%, 9% 100%, 0 82%, 5% 58%, 0 34%);
   }
-  & .mausritter .description { background: none !important; border-color: var(--rm-tinta) !important; }
-  & .mausritter .description .header { font-family: "RM Bebas", sans-serif !important; letter-spacing: .05em; color: var(--rm-tinta) !important;
-    background: none !important; border-bottom: 3px solid var(--rm-amarillo) !important; }
-  & .mausritter .description .body { color: var(--rm-tinta) !important; background: none !important; }
+  & .mausritter .description { background: none !important; border-color: var(--km-borde) !important; }
+  & .mausritter .description .header { font-family: "RM Bebas", sans-serif !important; letter-spacing: .05em; color: var(--km-texto) !important;
+    background: none !important; border-bottom: 3px solid var(--km-amarillo) !important; }
+  & .mausritter .description .body { color: var(--km-texto) !important; background: none !important; }
   & .mausritter .rollcontainer button { font-family: "RM Bebas", sans-serif !important; font-size: 1.1rem !important; letter-spacing: .05em;
-    background: var(--rm-amarillo) !important; color: var(--rm-tinta) !important; border: 2px solid var(--rm-tinta) !important; border-radius: 0 !important;
-    box-shadow: 2px 2px 0 var(--rm-tinta) !important; }
-  & .mausritter .rollcontainer button:hover:not(:disabled) { background: var(--rm-tinta) !important; color: var(--rm-amarillo) !important; }
+    background: var(--km-amarillo) !important; color: var(--km-tinta) !important; border: 2px solid var(--km-tinta) !important; border-radius: 0 !important;
+    box-shadow: 2px 2px 0 var(--km-borde) !important; }
+  & .mausritter .rollcontainer button:hover:not(:disabled) { background: var(--km-banda) !important; color: var(--km-banda-txt) !important; }
 
-  /* Diálogos de tirada (ventaja, mejorado/perjudicado, característica, poder del hechizo) */
-  &.mrkm-piel-dialogo { border: 3px solid var(--rm-tinta); border-radius: 0; box-shadow: 6px 6px 0 var(--rm-rojo); height: auto !important; min-width: 340px; }
-  &.mrkm-piel-dialogo .window-header { background: var(--rm-tinta) !important; color: var(--rm-amarillo) !important; border-bottom: 4px solid var(--rm-amarillo) !important; }
-  &.mrkm-piel-dialogo .window-header :is(.window-title, h4) { font-family: "RM Bebas", sans-serif !important; font-size: 1.3em; letter-spacing: .07em; color: var(--rm-amarillo) !important; }
-  &.mrkm-piel-dialogo .window-content {
-    background: linear-gradient(118deg, transparent 0 74%, var(--rm-amarillo) 74% 88%, var(--rm-rojo) 88% 90%, transparent 90%) var(--rm-papel) !important;
-    color: var(--rm-tinta) !important; font-size: calc(14px * var(--rm-escala));
+  /* ---- ventanas: diálogos de tirada y fichas ---- */
+  &:is(.mrkm-piel-dialogo, .mrkm-piel-ficha) { border: 3px solid var(--km-borde); border-radius: 0; box-shadow: 6px 6px 0 var(--km-rojo); }
+  &.mrkm-piel-dialogo { height: auto !important; min-width: 340px; }
+  &:is(.mrkm-piel-dialogo, .mrkm-piel-ficha) .window-header { background: var(--km-banda) !important; color: var(--km-banda-txt) !important; border-bottom: 4px solid var(--km-amarillo) !important; }
+  &:is(.mrkm-piel-dialogo, .mrkm-piel-ficha) .window-header :is(.window-title, h4) { font-family: "RM Bebas", sans-serif !important; font-size: 1.3em; letter-spacing: .07em; color: var(--km-banda-txt) !important; }
+  &:is(.mrkm-piel-dialogo, .mrkm-piel-ficha) .window-content {
+    background: linear-gradient(118deg, transparent 0 74%, var(--km-franja) 74% 88%, var(--km-rojo) 88% 90%, transparent 90%) var(--km-papel) !important;
+    color: var(--km-texto) !important;
   }
+  &.mrkm-piel-ficha .window-content { background: linear-gradient(118deg, transparent 0 82%, var(--km-franja) 82% 93%, var(--km-rojo) 93% 94.5%, transparent 94.5%) 0 0 / 100% 340px no-repeat var(--km-papel) !important; }
+  &.mrkm-piel-dialogo .window-content { font-size: calc(14px * var(--rm-escala)); }
   &.mrkm-piel-dialogo h2 { font-family: "RM Anton", sans-serif !important; text-transform: uppercase; font-size: 1.55em !important; letter-spacing: .02em;
-    color: var(--rm-tinta) !important; border: 0 !important; border-bottom: 5px solid var(--rm-amarillo) !important; margin: .2rem 0 .7rem !important; }
+    color: var(--km-texto) !important; border: 0 !important; border-bottom: 5px solid var(--km-amarillo) !important; margin: .2rem 0 .7rem !important; }
   &.mrkm-piel-dialogo :is(select, input) { font-family: "RM Bebas", sans-serif !important; font-size: 1.3em !important; letter-spacing: .04em; height: auto !important;
-    background: #fffaf0 !important; color: var(--rm-tinta) !important; border: 2px solid var(--rm-tinta) !important; border-radius: 0 !important;
-    box-shadow: 3px 3px 0 var(--rm-amarillo); padding: .15rem .4rem !important; }
-  &.mrkm-piel-dialogo :is(select, input):focus-visible { outline: 3px solid var(--rm-rojo); outline-offset: 1px; }
+    background: var(--km-campo) !important; color: var(--km-texto) !important; border: 2px solid var(--km-borde) !important; border-radius: 0 !important;
+    box-shadow: 3px 3px 0 var(--km-amarillo); padding: .15rem .4rem !important; }
+  &.mrkm-piel-dialogo :is(select, input):focus-visible { outline: 3px solid var(--km-rojo); outline-offset: 1px; }
   &.mrkm-piel-dialogo .dialog-buttons { gap: .5rem; }
   &.mrkm-piel-dialogo .dialog-buttons button {
     font-family: "RM Bebas", sans-serif !important; font-size: 1.35em !important; letter-spacing: .06em; line-height: 1.7;
-    background: var(--rm-amarillo) !important; color: var(--rm-tinta) !important; border: 2px solid var(--rm-tinta) !important; border-radius: 0 !important;
-    box-shadow: 3px 3px 0 var(--rm-tinta) !important;
+    background: var(--km-amarillo) !important; color: var(--km-tinta) !important; border: 2px solid var(--km-tinta) !important; border-radius: 0 !important;
+    box-shadow: 3px 3px 0 var(--km-borde) !important;
   }
-  &.mrkm-piel-dialogo .dialog-buttons button:first-child { background: var(--rm-rojo) !important; color: var(--rm-papel) !important; }
-  &.mrkm-piel-dialogo .dialog-buttons button:hover { background: var(--rm-tinta) !important; color: var(--rm-amarillo) !important; }
-  &.mrkm-piel-dialogo .dialog-buttons button:focus-visible { outline: 3px solid var(--rm-azul); outline-offset: 2px; }
+  &.mrkm-piel-dialogo .dialog-buttons button:first-child { background: var(--km-rojo) !important; color: #F6F1E3 !important; }
+  &.mrkm-piel-dialogo .dialog-buttons button:hover { background: var(--km-banda) !important; color: var(--km-banda-txt) !important; }
+  &.mrkm-piel-dialogo .dialog-buttons button:focus-visible { outline: 3px solid #1E40AF; outline-offset: 2px; }
+
+  /* ---- fichas de actor ---- */
+  &.mrkm-piel-ficha {
+    & :is(.header-border, .blockborder, .creaturedescription, .creature-abilities) {
+      background: var(--km-papel) !important; border: 3px solid var(--km-borde) !important; border-radius: 0 !important;
+      box-shadow: 4px 4px 0 var(--km-amarillo) !important; outline: 0 !important; color: var(--km-texto) !important;
+    }
+    & .headerinputtext { background: var(--km-banda) !important; color: var(--km-banda-txt) !important; font-family: "RM Bebas", sans-serif !important;
+      letter-spacing: .05em; text-transform: uppercase; }
+    & .headerinputfield input, & input.noborder { color: var(--km-texto) !important; background: transparent !important; font-family: "RM Maquina", monospace !important; }
+    & h1.charname input, & .charname > input[name="name"] { font-family: "RM Anton", sans-serif !important; text-transform: uppercase; letter-spacing: 0; font-size: 1.45rem !important;
+      color: var(--km-texto) !important; background: var(--km-papel) !important; border: 3px solid var(--km-borde) !important; border-radius: 0 !important; }
+    & :is(.statName, .creaturestat, .creature-header, .creaturename) { font-family: "RM Anton", sans-serif !important; color: var(--km-texto) !important; letter-spacing: .02em; }
+    & .rollable:is(:hover, :focus-visible) { color: var(--km-rojo) !important; text-shadow: 1px 1px 0 var(--km-amarillo); }
+    & :is(.minmax-input, .darkGreyText) { font-family: "RM Anton", sans-serif !important; color: var(--km-texto) !important; background: transparent !important; }
+    & :is(.current-max-label, .littleLabel) { font-family: "RM Bebas", sans-serif !important; color: var(--km-suave) !important; letter-spacing: .05em; }
+    & .seperatorLine { border-bottom: 2px solid var(--km-borde) !important; }
+    & .slant { border-right: 2px solid var(--km-borde) !important; }
+    & :is(.portrait, .portrait-creature) { border: 3px solid var(--km-borde) !important; border-radius: 0 !important; box-shadow: 6px 6px 0 var(--km-rojo) !important;
+      background: var(--km-amarillo) !important; }
+    & :is(.editor-content, .editor) { color: var(--km-texto) !important; }
+    & .editor-content :is(h1, h2, h3) { font-family: "RM Bebas", sans-serif !important; letter-spacing: .05em; color: var(--km-texto) !important;
+      border-bottom: 3px solid var(--km-amarillo) !important; }
+    & .mrkm-lema { font-family: "RM Maquina", monospace; font-size: .92em; margin: 0 0 .2rem; color: var(--km-texto); }
+    & .mrkm-lista { margin: .2rem 0 .1rem; }
+    & .mrkm-lista li { color: #121212; }
+    & .mrkm-lista li.tachado { text-decoration: line-through; text-decoration-color: var(--km-rojo); text-decoration-thickness: .22em; opacity: .75; }
+    & nav.sheet-tabs { background: var(--km-banda) !important; border: 0 !important; border-top: 4px solid var(--km-amarillo) !important; border-bottom: 4px solid var(--km-amarillo) !important; }
+    & nav.sheet-tabs .tab-select { font-family: "RM Bebas", sans-serif !important; font-size: 1.45rem; letter-spacing: .07em; text-transform: uppercase;
+      color: var(--km-banda-txt) !important; text-shadow: none !important; }
+    & nav.sheet-tabs .tab-select.active { background: var(--km-rojo) !important; color: #F6F1E3 !important; }
+    & .item-container { background: var(--km-papel2) !important; border: 3px solid var(--km-borde) !important; border-radius: 0 !important; }
+    & .item-card { border: 2px solid var(--km-tinta) !important; border-radius: 0 !important; box-shadow: 3px 3px 0 var(--km-rojo); }
+    & .item-card-header { background: var(--km-banda) !important; border-bottom: 3px solid var(--km-amarillo) !important; }
+    & .item-card-title { font-family: "RM Bebas", sans-serif !important; letter-spacing: .04em; color: var(--km-banda-txt) !important; }
+    & :is(.item-slot-header, .item-bag-text, .item-slot-footer) { font-family: "RM Bebas", sans-serif !important; color: var(--km-suave) !important; letter-spacing: .05em; }
+    & .item-slot-dashed { border-color: var(--km-suave) !important; }
+    & :is(.item-create, .item-header) { font-family: "RM Bebas", sans-serif !important; color: var(--km-texto) !important; letter-spacing: .05em; }
+    & .tab.biography { background: var(--km-papel) !important; color: var(--km-texto) !important; }
+  }
 }
