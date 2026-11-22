@@ -1,5 +1,9 @@
 # Cambios
 
+## 1.0.1
+
+- **Escenas vacías:** las once ilustraciones de escena ya no llevan personajes; son el lugar preparado o el rastro de lo que pasó, para colocar encima las figuras de cuerpo entero.
+
 ## 1.0.0
 
 Primera versión.
